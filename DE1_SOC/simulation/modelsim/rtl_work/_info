@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hp/Desktop/DE1_SOC/simulation/modelsim
+vDE1_SOC
+Z1 !s110 1677503215
+!i10b 1
+!s100 d]]NjZm@6f>CHgnfaDz:<0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3[W28U^zE6Im]n=KBQmdP2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1677502653
+Z5 8C:/Users/hp/Desktop/DE1_SOC/de1_soc.v
+Z6 FC:/Users/hp/Desktop/DE1_SOC/de1_soc.v
+!i122 0
+L0 6 109
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1677503215.000000
+!s107 C:/Users/hp/Desktop/DE1_SOC/de1_soc.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/DE1_SOC|C:/Users/hp/Desktop/DE1_SOC/de1_soc.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hp/Desktop/DE1_SOC
+Z12 tCvgOpt 0
+n@d@e1_@s@o@c
+vmux4bit_2to1
+R1
+!i10b 1
+!s100 B6Jo[OJ3603@jki=96H<O1
+R2
+Im5U8WihKLkQ:4aXTF]c9i2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 116 9
+R7
+r1
+!s85 0
+31
+R8
+Z13 !s107 C:/Users/hp/Desktop/DE1_SOC/de1_soc.v|
+R9
+!i113 1
+R10
+R11
+R12

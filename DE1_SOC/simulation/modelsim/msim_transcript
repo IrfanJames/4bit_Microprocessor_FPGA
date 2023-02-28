@@ -1,0 +1,53 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do DE1_SOC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/hp/Desktop/DE1_SOC {C:/Users/hp/Desktop/DE1_SOC/de1_soc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:06:55 on Feb 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hp/Desktop/DE1_SOC" C:/Users/hp/Desktop/DE1_SOC/de1_soc.v 
+# -- Compiling module DE1_SOC
+# -- Compiling module mux4bit_2to1
+# 
+# Top level modules:
+# 	DE1_SOC
+# End time: 01:06:55 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/hp/Desktop/DE1_SOC {C:/Users/hp/Desktop/DE1_SOC/testing.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:06:55 on Feb 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/hp/Desktop/DE1_SOC" C:/Users/hp/Desktop/DE1_SOC/testing.v 
+# ** Error: (vlog-13069) C:/Users/hp/Desktop/DE1_SOC/testing.v(1): near "(": syntax error, unexpected '('.
+# ** Error: C:/Users/hp/Desktop/DE1_SOC/testing.v(1): (vlog-13205) Syntax error found in the scope following 'testing'. Is there a missing '::'?
+# End time: 01:06:56 on Feb 27,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE1_SOC_run_msim_rtl_verilog.do line 10
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/hp/Desktop/DE1_SOC {C:/Users/hp/Desktop/DE1_SOC/testing.v}"
+vsim work.mux4bit_2to1
+# vsim work.mux4bit_2to1 
+# Start time: 01:07:30 on Feb 27,2023
+# Loading work.mux4bit_2to1
+add wave -position insertpoint /mux4bit_2to1/inA
+vsim work.mux4bit_2to1
+# End time: 01:08:08 on Feb 27,2023, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 0
+# vsim work.mux4bit_2to1 
+# Start time: 01:08:08 on Feb 27,2023
+# Loading work.mux4bit_2to1
+# WARNING: No extended dataflow license exists
+vsim work.mux4bit_2to1
+# End time: 01:08:32 on Feb 27,2023, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0
