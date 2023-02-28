@@ -1,0 +1,111 @@
+---------------- 4-bit Adder-Subtractor--------------------------
+
+   assign HEX0 = 7'b1111111;
+   assign HEX1 = 7'b1111111;
+   assign HEX2 = 7'b1111111;
+   assign HEX3 = 7'b1111111;
+   assign HEX4 = 7'b1111111;
+   assign HEX5 = 7'b1111111;
+   
+	// Defining Intermediate connection.
+   wire [3:0] X, Y, S;
+   wire Cout, Cin;
+   
+	//Defining Input Switches
+   assign Cin = SW[9];
+   assign X   = SW[7:4];
+   assign Y   = SW[3:0];
+   assign B   = SW[8];             //
+	// Instantiating Adder_n module
+   Adder_n U (B,Cin, X, Y, S, Cout);
+
+	// Defining Output Displays
+   assign LEDR[3:0] = S;
+   assign LEDR[4]   = Cout;
+
+endmodule
+
+module Adder_n(B,Cin,X,Y,S,Cout);  // B input selects b/w add & subtract
+    // Cin =Carry In , X= First Input, Y= Second Input, S= Sum, Cout= Carry out
+	 parameter n=4;
+    input Cin,B;                   //
+	 input [n-1:0]X,Y;
+	 output Cout;
+	 output [n-1:0]S;
+	 wire [n:0]C;
+	 wire [n-1:0]Y0;                //
+	 
+	 assign Y0[0] = B^Y[0];      	  //
+    assign Y0[1] = B^Y[1];         //	 
+	 assign Y0[2] = B^Y[2];         //
+	 assign Y0[3] = B^Y[3];         //
+	 
+	 genvar i;
+	 assign C[0]=Cin;
+    assign Cout=C[n];	
+	
+	 generate
+	    for(i=0;i<=n-1;i=i+1)
+       begin:addbit		
+	   	fulladd stage(C[i],X[i],Y0[i],S[i],C[i+1]);  //
+		 end
+	 endgenerate	 
+	
+endmodule
+
+// 1-bit adder module 
+module fulladd(Cin,x,y,s,Cout);
+	input Cin,x,y;
+	output s,Cout;
+	
+	assign s=x^y^Cin;
+	assign Cout=(x&y)|(x&Cin)|(y&Cin);
+endmodule
+
+
+
+------------------ 4-bit Register------------------------------------------
+
+assign D = SW[3:0];
+	assign Q = SW[7:4];
+   reg_4bit FF(clk,D,Q);
+	
+endmodule
+	
+module reg_4bit(clk,D,Q);
+   parameter n=4;
+	input [n-1:0]D;
+	input clk;
+	output reg [n-1:0]Q;
+
+	always @(posedge clk)
+	begin
+        Q<=D;
+   end	
+		 
+endmodule
+ 
+
+--------------4-bit 2to1 MUX-------------------------------------------------
+
+	assign inA = SW[3:0];
+	assign inB = SW[7:4];
+	assign  s  = SW[8];
+	assign out = LEDR[3:0];
+	
+	mux4bit_2to1 M(inA,inB,s,out);
+	
+endmodule
+
+module mux4bit_2to1 (inA,inB,s,out); 
+   parameter n=4;
+   input [n-1:0]inA,inB;
+	input s;
+	output [n-1:0]out;
+	
+	assign out= s? inA: inB;
+	
+endmodule
+
+
+---------------------------------------------------------------------------------
