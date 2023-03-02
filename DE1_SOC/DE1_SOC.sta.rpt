@@ -1,6 +1,6 @@
 Timing Analyzer report for DE1_SOC
-Mon Feb 20 19:12:39 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fri Mar  3 00:08:31 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -61,7 +61,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -78,18 +78,18 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                     ;
-+-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Timing Analyzer       ; Legacy Timing Analyzer                              ;
-; Revision Name         ; DE1_SOC                                             ;
-; Device Family         ; Cyclone V                                           ;
-; Device Name           ; 5CSEMA5F31C6                                        ;
-; Timing Models         ; Final                                               ;
-; Delay Model           ; Combined                                            ;
-; Rise/Fall Delays      ; Enabled                                             ;
-+-----------------------+-----------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                        ;
++-----------------------+--------------------------------------------------------+
+; Quartus Prime Version ; Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
+; Revision Name         ; DE1_SOC                                                ;
+; Device Family         ; Cyclone V                                              ;
+; Device Name           ; 5CSEMA5F31C6                                           ;
+; Timing Models         ; Final                                                  ;
+; Delay Model           ; Combined                                               ;
+; Rise/Fall Delays      ; Enabled                                                ;
++-----------------------+--------------------------------------------------------+
 
 
 +------------------------------------------+
@@ -100,13 +100,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
-;     Processors 3-4         ;   0.2%      ;
+;     Processor 2            ;   1.3%      ;
+;     Processor 3            ;   1.3%      ;
+;     Processor 4            ;   1.2%      ;
 +----------------------------+-------------+
 
 
@@ -115,7 +116,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; DE1_SOC.SDC   ; OK     ; Mon Feb 20 19:12:14 2023 ;
+; DE1_SOC.SDC   ; OK     ; Fri Mar  3 00:08:25 2023 ;
 +---------------+--------+--------------------------+
 
 
@@ -503,14 +504,7 @@ No synchronizer chains to report.
 ; KEY[1]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; KEY[2]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; KEY[3]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[0]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[1]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[2]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[3]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[4]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[5]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[6]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[7]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[8]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; TD_CLK27      ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; TD_DATA[0]    ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; TD_DATA[1]    ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
@@ -582,8 +576,15 @@ No synchronizer chains to report.
 ; GPIO[33]      ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; GPIO[34]      ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; GPIO[35]      ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[1]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[3]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[0]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[2]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[5]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[7]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[4]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[6]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[9]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[8]         ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 +---------------+--------------+-----------------+-----------------+
 
 
@@ -1332,10 +1333,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 48    ; 48   ;
-; Unconstrained Output Ports      ; 28    ; 28   ;
-; Unconstrained Output Port Paths ; 48    ; 48   ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 80    ; 80   ;
+; Unconstrained Output Ports      ; 19    ; 19   ;
+; Unconstrained Output Port Paths ; 80    ; 80   ;
 +---------------------------------+-------+------+
 
 
@@ -1360,7 +1361,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; SW[8]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
@@ -1370,27 +1378,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1398,6 +1385,18 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -1406,7 +1405,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; SW[8]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
@@ -1416,27 +1422,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX2[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1444,6 +1429,18 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -1452,40 +1449,40 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Feb 20 19:12:06 2023
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Fri Mar  3 00:08:24 2023
 Info: Command: quartus_sta DE1_SOC -c DE1_SOC
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
-Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'DE1_SOC.SDC'
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Time value "1.536 MH" is not valid File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 18
-    Info (332050): create_clock -period "1.536 MH" -name clk_audbck [get_ports AUD_BCLK] File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 18
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Option -period: Invalid clock period File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 18
-Warning (332174): Ignored filter at DE1_SOC.sdc(29): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 29
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(29): Argument <targets> is not an object ID File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 29
-    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 29
-Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tdi could not be matched with a port File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 30
-Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tck could not be matched with a clock File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 30
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument <targets> is an empty collection File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 30
-    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 30
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument -clock is not an object ID File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 30
-Warning (332174): Ignored filter at DE1_SOC.sdc(31): altera_reserved_tms could not be matched with a port File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 31
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument <targets> is an empty collection File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 31
-    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 31
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument -clock is not an object ID File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 31
-Warning (332174): Ignored filter at DE1_SOC.sdc(32): altera_reserved_tdo could not be matched with a port File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 32
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument <targets> is an empty collection File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 32
-    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 32
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument -clock is not an object ID File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 32
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Time value "1.536 MH" is not valid File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
+    Info (332050): create_clock -period "1.536 MH" -name clk_audbck [get_ports AUD_BCLK] File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Option -period: Invalid clock period File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
+Warning (332174): Ignored filter at DE1_SOC.sdc(29): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(29): Argument <targets> is not an object ID File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
+    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
+Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tdi could not be matched with a port File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tck could not be matched with a clock File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument <targets> is an empty collection File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument -clock is not an object ID File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+Warning (332174): Ignored filter at DE1_SOC.sdc(31): altera_reserved_tms could not be matched with a port File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument <targets> is an empty collection File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument -clock is not an object ID File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
+Warning (332174): Ignored filter at DE1_SOC.sdc(32): altera_reserved_tdo could not be matched with a port File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument <targets> is an empty collection File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
+    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument -clock is not an object ID File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Warning (332174): Ignored filter at DE1_SOC.sdc(101): VGA_BLANK could not be matched with a port File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 101
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(101): Argument <targets> is an empty collection File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 101
-    Info (332050): set_output_delay -max -clock clk_vga 0.215 [get_ports VGA_BLANK] File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 101
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(102): Argument <targets> is an empty collection File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 102
-    Info (332050): set_output_delay -min -clock clk_vga -1.485 [get_ports VGA_BLANK] File: C:/Users/hp/Desktop/DE1_SOC/DE1_SOC.sdc Line: 102
+Warning (332174): Ignored filter at DE1_SOC.sdc(101): VGA_BLANK could not be matched with a port File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(101): Argument <targets> is an empty collection File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
+    Info (332050): set_output_delay -max -clock clk_vga 0.215 [get_ports VGA_BLANK] File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(102): Argument <targets> is an empty collection File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 102
+    Info (332050): set_output_delay -min -clock clk_vga -1.485 [get_ports VGA_BLANK] File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 102
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
@@ -1524,9 +1521,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 5137 megabytes
-    Info: Processing ended: Mon Feb 20 19:12:39 2023
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 5151 megabytes
+    Info: Processing ended: Fri Mar  3 00:08:31 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 

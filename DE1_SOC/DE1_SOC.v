@@ -11,14 +11,6 @@ output		          		ADC_DIN,
 input 		          		ADC_DOUT,
 output		          		ADC_SCLK,
 
-//////////// Audio //////////
-input 		          		AUD_ADCDAT,
-inout 		          		AUD_ADCLRCK,
-inout 		          		AUD_BCLK,
-output		          		AUD_DACDAT,
-inout 		          		AUD_DACLRCK,
-output		          		AUD_XCK,
-
 //////////// CLOCK //////////
 input 		          		CLOCK2_50,
 input 		          		CLOCK3_50,
@@ -37,10 +29,6 @@ output		          		DRAM_LDQM,
 output		          		DRAM_RAS_N,
 output		          		DRAM_UDQM,
 output		          		DRAM_WE_N,
-
-//////////// I2C for Audio and Video-In //////////
-output		          		FPGA_I2C_SCLK,
-inout 		          		FPGA_I2C_SDAT,
 
 //////////// SEG7 //////////
 output		     [6:0]		HEX0,
@@ -69,23 +57,6 @@ inout 		          		PS2_DAT2,
 //////////// SW //////////
 input 		     [9:0]		SW,
 
-//////////// Video-In //////////
-input 		          		TD_CLK27,
-input 		     [7:0]		TD_DATA,
-input 		          		TD_HS,
-output		          		TD_RESET_N,
-input 		          		TD_VS,
-
-//////////// VGA //////////
-output		          		VGA_BLANK_N,
-output		     [7:0]		VGA_B,
-output		          		VGA_CLK,
-output		     [7:0]		VGA_G,
-output		          		VGA_HS,
-output		     [7:0]		VGA_R,
-output		          		VGA_SYNC_N,
-output		          		VGA_VS,
-
 //////////// GPIO_0, GPIO_0 connect to GPIO Default //////////
 inout 		    [35:0]		GPIO
 );
@@ -96,29 +67,16 @@ inout 		    [35:0]		GPIO
 //  REG/WIRE declarations
 //=======================================================
 
-	// To turn off al the HEX Display
+	// To turn off all the HEX Display
    assign HEX0 = 7'b1111111;
    assign HEX1 = 7'b1111111;
    assign HEX2 = 7'b1111111;
-   assign HEX3 = 7'b1111111;
    assign HEX4 = 7'b1111111;
-   assign HEX5 = 7'b1111111;
-   
-	assign inA = SW[3:0];
-	assign inB = SW[7:4];
-	assign  s  = SW[8];
-	assign out = LEDR[3:0];
 	
-	mux4bit_2to1 M(inA,inB,s,out);
+	segment_7 ZZ (SW[7:4], HEX5);
+	segment_7 YY (SW[3:0], HEX3);
+	Adder_n XX (SW[9], SW[7:4], SW[3:0], LEDR[3:0], LEDR[4]);
 	
-endmodule
-
-module mux4bit_2to1 (inA,inB,s,out); 
-   parameter n=4;
-   input [n-1:0]inA,inB;
-	input s;
-	output [n-1:0]out;
-	
-	assign out= s? inA: inB;
+	mux4bit_2to1 WW (SW[3:0], SW[7:4], SW[9], LEDR[9:6]);
 	
 endmodule

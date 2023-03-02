@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Feb 26 19:45:34 2023
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fitter Status : Successful - Fri Mar  3 00:08:14 2023
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : DE1_SOC
 Top-level Entity Name : DE1_SOC
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 4 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 12 / 32,070 ( < 1 % )
 Total registers : 0
 Total pins : 204 / 457 ( 45 % )
 Total virtual pins : 0

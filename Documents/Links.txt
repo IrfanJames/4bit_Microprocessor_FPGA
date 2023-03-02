@@ -1,0 +1,8 @@
+*Design
+Ben Eater:
+  https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU
+
+*FPGA
+Intel Design Recommendations:
+  https://www.intel.com/content/www/us/en/docs/programmable/683323/18-1/recommended-design-practices.html
+
