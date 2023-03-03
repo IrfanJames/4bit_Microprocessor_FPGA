@@ -66,17 +66,9 @@ inout 		    [35:0]		GPIO
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
-	// To turn off all the HEX Display
-   assign HEX0 = 7'b1111111;
-   assign HEX1 = 7'b1111111;
-   assign HEX2 = 7'b1111111;
-   assign HEX4 = 7'b1111111;
 	
-	segment_7 ZZ (SW[7:4], HEX5);
-	segment_7 YY (SW[3:0], HEX3);
-	Adder_n XX (SW[9], SW[7:4], SW[3:0], LEDR[3:0], LEDR[4]);
+	Register_4bit AA (SW[3:0], SW[8], SW[7], CLOCK2_50, LEDR[3:0]);
 	
-	mux4bit_2to1 WW (SW[3:0], SW[7:4], SW[9], LEDR[9:6]);
+	Display_7_Segment BB (SW[4:0], HEX1, HEX0);
 	
 endmodule

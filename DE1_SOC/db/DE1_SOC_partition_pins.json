@@ -4,59 +4,47 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "HEX3[0]",
+					"name" : "HEX0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX3[1]",
+					"name" : "HEX0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX3[2]",
+					"name" : "HEX0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX3[3]",
+					"name" : "HEX0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX3[4]",
+					"name" : "HEX0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX3[5]",
+					"name" : "HEX0[5]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX3[6]",
+					"name" : "HEX0[6]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[0]",
+					"name" : "HEX1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[1]",
+					"name" : "HEX1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[2]",
+					"name" : "HEX1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5[6]",
+					"name" : "HEX1[5]",
 					"strict" : false
 				},
 				{
@@ -76,23 +64,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[4]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[6]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[7]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[8]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[9]",
+					"name" : "SW[0]",
 					"strict" : false
 				},
 				{
@@ -100,11 +72,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[3]",
+					"name" : "SW[4]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[0]",
+					"name" : "SW[3]",
 					"strict" : false
 				},
 				{
@@ -112,7 +84,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[5]",
+					"name" : "CLOCK2_50",
 					"strict" : false
 				},
 				{
@@ -120,15 +92,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[9]",
+					"name" : "SW[8]",
 					"strict" : false
 				}
 			]

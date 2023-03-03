@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SOC
-Fri Mar  3 00:25:55 2023
+Fri Mar  3 19:10:50 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -14,11 +14,12 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Adder_n:XX
- 10. Parameter Settings for User Entity Instance: mux4bit_2to1:WW
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Display_7_Segment:BB|mux4bit_2to1:U_F
+ 10. Port Connectivity Checks: "Display_7_Segment:BB|mux4bit_2to1:U_F"
+ 11. Port Connectivity Checks: "Display_7_Segment:BB|Circuit_A:U_E"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,13 +46,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Mar  3 00:25:55 2023          ;
+; Analysis & Synthesis Status     ; Successful - Fri Mar  3 19:10:50 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; DE1_SOC                                        ;
 ; Top-level Entity Name           ; DE1_SOC                                        ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 0                                              ;
+; Total registers                 ; 4                                              ;
 ; Total pins                      ; 155                                            ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
@@ -174,8 +175,8 @@ https://fpgasoftware.intel.com/eula.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                    ; Library ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
 ; All_Modules/Mux_n.v              ; yes             ; User Verilog HDL File        ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v         ;         ;
-; All_Modules/Add_Sub_n.v          ; yes             ; User Verilog HDL File        ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v     ;         ;
 ; All_Modules/7_Segment_0-F.v      ; yes             ; User Verilog HDL File        ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v ;         ;
+; All_Modules/Register.v           ; yes             ; User Verilog HDL File        ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v      ;         ;
 ; de1_soc.v                        ; yes             ; Auto-Found Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v                   ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
 
@@ -185,43 +186,39 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 13          ;
+; Estimate of Logic utilization (ALMs needed) ; 6           ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 24          ;
+; Combinational ALUT usage for logic          ; 8           ;
 ;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 2           ;
-;     -- 5 input functions                    ; 2           ;
-;     -- 4 input functions                    ; 7           ;
-;     -- <=3 input functions                  ; 13          ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 7           ;
+;     -- 4 input functions                    ; 1           ;
+;     -- <=3 input functions                  ; 0           ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 0           ;
+; Dedicated logic registers                   ; 4           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 155         ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; SW[0]~input ;
-; Maximum fan-out                             ; 11          ;
-; Total fan-out                               ; 322         ;
-; Average fan-out                             ; 0.83        ;
+; Maximum fan-out node                        ; SW[1]~input ;
+; Maximum fan-out                             ; 9           ;
+; Total fan-out                               ; 281         ;
+; Average fan-out                             ; 0.74        ;
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name  ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
-; |DE1_SOC                        ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 155  ; 0            ; |DE1_SOC                                    ; DE1_SOC      ; work         ;
-;    |Adder_n:XX|                 ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Adder_n:XX                         ; Adder_n      ; work         ;
-;       |fulladd:addbit[0].stage| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Adder_n:XX|fulladd:addbit[0].stage ; fulladd      ; work         ;
-;       |fulladd:addbit[1].stage| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Adder_n:XX|fulladd:addbit[1].stage ; fulladd      ; work         ;
-;       |fulladd:addbit[2].stage| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Adder_n:XX|fulladd:addbit[2].stage ; fulladd      ; work         ;
-;       |fulladd:addbit[3].stage| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Adder_n:XX|fulladd:addbit[3].stage ; fulladd      ; work         ;
-;    |mux4bit_2to1:WW|            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|mux4bit_2to1:WW                    ; mux4bit_2to1 ; work         ;
-;    |segment_7:YY|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|segment_7:YY                       ; segment_7    ; work         ;
-;    |segment_7:ZZ|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|segment_7:ZZ                       ; segment_7    ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name       ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------------+--------------+
+; |DE1_SOC                   ; 8 (0)               ; 4 (0)                     ; 0                 ; 0          ; 155  ; 0            ; |DE1_SOC                                     ; DE1_SOC           ; work         ;
+;    |Display_7_Segment:BB|  ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Display_7_Segment:BB                ; Display_7_Segment ; work         ;
+;       |comparator:U_C|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Display_7_Segment:BB|comparator:U_C ; comparator        ; work         ;
+;       |segment_7:U_G|      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Display_7_Segment:BB|segment_7:U_G  ; segment_7         ; work         ;
+;    |Register_4bit:AA|      ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Register_4bit:AA                    ; Register_4bit     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -230,34 +227,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder_n:XX ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; n              ; 4     ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Display_7_Segment:BB|mux4bit_2to1:U_F ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux4bit_2to1:WW ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; n              ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Display_7_Segment:BB|mux4bit_2to1:U_F"                                                                                                                                           ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                          ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in_A ; Input  ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in_B ; Input  ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out  ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (5 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND.            ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Display_7_Segment:BB|Circuit_A:U_E"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; out[4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -265,19 +272,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+; arriav_ff             ; 4                           ;
+;     ENA CLR           ; 4                           ;
 ; arriav_io_obuf        ; 56                          ;
-; arriav_lcell_comb     ; 26                          ;
-;     normal            ; 26                          ;
+; arriav_lcell_comb     ; 10                          ;
+;     normal            ; 10                          ;
 ;         0 data inputs ; 2                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 7                           ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 2                           ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 7                           ;
 ; boundary_port         ; 155                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.46                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,7 +302,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Fri Mar  3 00:25:45 2023
+    Info: Processing started: Fri Mar  3 19:10:40 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SOC -c DE1_SOC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -307,18 +313,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file all_mod
 Info (12021): Found 2 design units, including 2 entities, in source file all_modules/add_sub_n.v
     Info (12023): Found entity 1: Adder_n File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 3
     Info (12023): Found entity 2: fulladd File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 31
-Info (12021): Found 1 design units, including 1 entities, in source file all_modules/7_segment_0-f.v
-    Info (12023): Found entity 1: segment_7 File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(7): created implicit net for "a" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(8): created implicit net for "b" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(9): created implicit net for "c" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 9
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(10): created implicit net for "d" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 10
+Info (12021): Found 5 design units, including 5 entities, in source file all_modules/7_segment_0-f.v
+    Info (12023): Found entity 1: Display_7_Segment File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 5
+    Info (12023): Found entity 2: comparator File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 27
+    Info (12023): Found entity 3: Circuit_A File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 37
+    Info (12023): Found entity 4: segment_7 File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 57
+    Info (12023): Found entity 5: segment_7_01 File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file all_modules/register.v
+    Info (12023): Found entity 1: Register_4bit File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(41): created implicit net for "a" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(42): created implicit net for "b" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(43): created implicit net for "c" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(44): created implicit net for "d" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(45): created implicit net for "e" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(61): created implicit net for "a" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 61
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(62): created implicit net for "b" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(63): created implicit net for "c" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 63
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(64): created implicit net for "d" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 64
 Warning (12125): Using design file de1_soc.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: DE1_SOC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 6
 Info (12127): Elaborating entity "DE1_SOC" for the top level hierarchy
 Warning (10034): Output port "DRAM_ADDR" at de1_soc.v(21) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 21
 Warning (10034): Output port "DRAM_BA" at de1_soc.v(22) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 22
-Warning (10034): Output port "LEDR[5]" at de1_soc.v(49) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 49
+Warning (10034): Output port "HEX2" at de1_soc.v(36) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
+Warning (10034): Output port "HEX3" at de1_soc.v(37) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 37
+Warning (10034): Output port "HEX4" at de1_soc.v(38) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+Warning (10034): Output port "HEX5" at de1_soc.v(39) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 39
+Warning (10034): Output port "LEDR[9..4]" at de1_soc.v(49) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 49
 Warning (10034): Output port "ADC_CONVST" at de1_soc.v(9) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 9
 Warning (10034): Output port "ADC_DIN" at de1_soc.v(10) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 10
 Warning (10034): Output port "ADC_SCLK" at de1_soc.v(12) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 12
@@ -331,10 +352,15 @@ Warning (10034): Output port "DRAM_RAS_N" at de1_soc.v(29) has no driver File: D
 Warning (10034): Output port "DRAM_UDQM" at de1_soc.v(30) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 30
 Warning (10034): Output port "DRAM_WE_N" at de1_soc.v(31) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 31
 Warning (10034): Output port "IRDA_TXD" at de1_soc.v(43) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 43
-Info (12128): Elaborating entity "segment_7" for hierarchy "segment_7:ZZ" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 76
-Info (12128): Elaborating entity "Adder_n" for hierarchy "Adder_n:XX" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 78
-Info (12128): Elaborating entity "fulladd" for hierarchy "Adder_n:XX|fulladd:addbit[0].stage" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 24
-Info (12128): Elaborating entity "mux4bit_2to1" for hierarchy "mux4bit_2to1:WW" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 80
+Info (12128): Elaborating entity "Register_4bit" for hierarchy "Register_4bit:AA" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 70
+Info (12128): Elaborating entity "Display_7_Segment" for hierarchy "Display_7_Segment:BB" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 72
+Info (12128): Elaborating entity "comparator" for hierarchy "Display_7_Segment:BB|comparator:U_C" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 10
+Info (12128): Elaborating entity "segment_7_01" for hierarchy "Display_7_Segment:BB|segment_7_01:U_D" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 11
+Info (12128): Elaborating entity "Circuit_A" for hierarchy "Display_7_Segment:BB|Circuit_A:U_E" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 15
+Warning (10036): Verilog HDL or VHDL warning at 7_Segment_0-F.v(41): object "a" assigned a value but never read File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 41
+Info (12128): Elaborating entity "mux4bit_2to1" for hierarchy "Display_7_Segment:BB|mux4bit_2to1:U_F" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
+Info (12128): Elaborating entity "segment_7" for hierarchy "Display_7_Segment:BB|segment_7:U_G" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 17
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 27
     Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 27
@@ -419,42 +445,49 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 29
     Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 30
     Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 31
-    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 34
-    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 34
-    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 34
-    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 34
-    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 34
-    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 34
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 34
-    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
-    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
-    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
-    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
-    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
-    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
     Warning (13410): Pin "HEX1[6]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 35
-    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
-    Warning (13410): Pin "HEX2[1]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
-    Warning (13410): Pin "HEX2[2]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
-    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
-    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
-    Warning (13410): Pin "HEX2[5]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
-    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
-    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
-    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
-    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
-    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
-    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 36
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 37
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 37
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 37
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 37
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 37
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 37
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 37
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 38
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 39
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 39
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 39
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 39
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 39
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 39
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 39
     Warning (13410): Pin "IRDA_TXD" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 43
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 49
     Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 49
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 49
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 49
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 49
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 49
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ADC_DOUT" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 11
-    Warning (15610): No output dependent on input pin "CLOCK2_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 15
     Warning (15610): No output dependent on input pin "CLOCK3_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 16
     Warning (15610): No output dependent on input pin "CLOCK4_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 17
     Warning (15610): No output dependent on input pin "CLOCK_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 18
@@ -463,16 +496,18 @@ Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 46
     Warning (15610): No output dependent on input pin "KEY[2]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 46
     Warning (15610): No output dependent on input pin "KEY[3]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 46
-    Warning (15610): No output dependent on input pin "SW[8]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 58
-Info (21057): Implemented 179 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[5]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[6]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[9]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/de1_soc.v Line: 58
+Info (21057): Implemented 167 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 79 output pins
     Info (21060): Implemented 56 bidirectional pins
-    Info (21061): Implemented 24 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 147 warnings
-    Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Fri Mar  3 00:25:55 2023
+    Info (21061): Implemented 12 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 167 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Fri Mar  3 19:10:50 2023
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:19
 
 
