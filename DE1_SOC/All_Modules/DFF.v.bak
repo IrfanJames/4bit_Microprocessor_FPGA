@@ -1,0 +1,14 @@
+//////////////////////////////////////////////////////////////////////////
+// DFF for Cout of ALU
+
+module DFF (in, clk, out);
+	input in, clk;
+	output reg out;
+	
+	always @(posedge clk, negedge reset)
+	begin
+		if (reset == 0)	out <= 4'b0000;
+		else if (en)		out <= in;
+	end
+endmodule
+//////////////////////////////////////////////////////////////////////////

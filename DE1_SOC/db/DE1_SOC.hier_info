@@ -46,34 +46,34 @@ DRAM_LDQM <= <GND>
 DRAM_RAS_N <= <GND>
 DRAM_UDQM <= <GND>
 DRAM_WE_N <= <GND>
-HEX0[0] <= Number_Cruncher:UU.port10
-HEX0[1] <= Number_Cruncher:UU.port10
-HEX0[2] <= Number_Cruncher:UU.port10
-HEX0[3] <= Number_Cruncher:UU.port10
-HEX0[4] <= Number_Cruncher:UU.port10
-HEX0[5] <= Number_Cruncher:UU.port10
-HEX0[6] <= Number_Cruncher:UU.port10
-HEX1[0] <= Number_Cruncher:UU.port9
-HEX1[1] <= Number_Cruncher:UU.port9
-HEX1[2] <= Number_Cruncher:UU.port9
-HEX1[3] <= Number_Cruncher:UU.port9
-HEX1[4] <= Number_Cruncher:UU.port9
-HEX1[5] <= Number_Cruncher:UU.port9
-HEX1[6] <= Number_Cruncher:UU.port9
-HEX2[0] <= Number_Cruncher:UU.port12
-HEX2[1] <= Number_Cruncher:UU.port12
-HEX2[2] <= Number_Cruncher:UU.port12
-HEX2[3] <= Number_Cruncher:UU.port12
-HEX2[4] <= Number_Cruncher:UU.port12
-HEX2[5] <= Number_Cruncher:UU.port12
-HEX2[6] <= Number_Cruncher:UU.port12
-HEX3[0] <= Number_Cruncher:UU.port11
-HEX3[1] <= Number_Cruncher:UU.port11
-HEX3[2] <= Number_Cruncher:UU.port11
-HEX3[3] <= Number_Cruncher:UU.port11
-HEX3[4] <= Number_Cruncher:UU.port11
-HEX3[5] <= Number_Cruncher:UU.port11
-HEX3[6] <= Number_Cruncher:UU.port11
+HEX0[0] <= Number_Cruncher:UU_A.port3
+HEX0[1] <= Number_Cruncher:UU_A.port3
+HEX0[2] <= Number_Cruncher:UU_A.port3
+HEX0[3] <= Number_Cruncher:UU_A.port3
+HEX0[4] <= Number_Cruncher:UU_A.port3
+HEX0[5] <= Number_Cruncher:UU_A.port3
+HEX0[6] <= Number_Cruncher:UU_A.port3
+HEX1[0] <= Number_Cruncher:UU_A.port2
+HEX1[1] <= Number_Cruncher:UU_A.port2
+HEX1[2] <= Number_Cruncher:UU_A.port2
+HEX1[3] <= Number_Cruncher:UU_A.port2
+HEX1[4] <= Number_Cruncher:UU_A.port2
+HEX1[5] <= Number_Cruncher:UU_A.port2
+HEX1[6] <= Number_Cruncher:UU_A.port2
+HEX2[0] <= Number_Cruncher:UU_A.port5
+HEX2[1] <= Number_Cruncher:UU_A.port5
+HEX2[2] <= Number_Cruncher:UU_A.port5
+HEX2[3] <= Number_Cruncher:UU_A.port5
+HEX2[4] <= Number_Cruncher:UU_A.port5
+HEX2[5] <= Number_Cruncher:UU_A.port5
+HEX2[6] <= Number_Cruncher:UU_A.port5
+HEX3[0] <= Number_Cruncher:UU_A.port4
+HEX3[1] <= Number_Cruncher:UU_A.port4
+HEX3[2] <= Number_Cruncher:UU_A.port4
+HEX3[3] <= Number_Cruncher:UU_A.port4
+HEX3[4] <= Number_Cruncher:UU_A.port4
+HEX3[5] <= Number_Cruncher:UU_A.port4
+HEX3[6] <= Number_Cruncher:UU_A.port4
 HEX4[0] <= <GND>
 HEX4[1] <= <GND>
 HEX4[2] <= <GND>
@@ -94,29 +94,29 @@ KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-LEDR[0] <= Number_Cruncher:UU.port7
-LEDR[1] <= Number_Cruncher:UU.port7
-LEDR[2] <= Number_Cruncher:UU.port7
-LEDR[3] <= Number_Cruncher:UU.port7
-LEDR[4] <= Number_Cruncher:UU.port7
-LEDR[5] <= Number_Cruncher:UU.port7
-LEDR[6] <= Number_Cruncher:UU.port7
-LEDR[7] <= Number_Cruncher:UU.port7
+LEDR[0] <= Number_Cruncher:UU_A.port1
+LEDR[1] <= Number_Cruncher:UU_A.port1
+LEDR[2] <= Number_Cruncher:UU_A.port1
+LEDR[3] <= Number_Cruncher:UU_A.port1
+LEDR[4] <= Number_Cruncher:UU_A.port1
+LEDR[5] <= Number_Cruncher:UU_A.port1
+LEDR[6] <= Number_Cruncher:UU_A.port1
+LEDR[7] <= Number_Cruncher:UU_A.port1
 LEDR[8] <= <GND>
-LEDR[9] <= Number_Cruncher:UU.port8
+LEDR[9] <= <GND>
 PS2_CLK <> <UNC>
 PS2_CLK2 <> <UNC>
 PS2_DAT <> <UNC>
 PS2_DAT2 <> <UNC>
-SW[0] => SW[0].IN1
-SW[1] => SW[1].IN1
-SW[2] => SW[2].IN1
-SW[3] => SW[3].IN1
-SW[4] => SW[4].IN1
-SW[5] => SW[5].IN1
-SW[6] => SW[6].IN1
-SW[7] => SW[7].IN1
-SW[8] => SW[8].IN1
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
 SW[9] => SW[9].IN1
 GPIO[0] <> <UNC>
 GPIO[1] <> <UNC>
@@ -156,26 +156,16 @@ GPIO[34] <> <UNC>
 GPIO[35] <> <UNC>
 
 
-|DE1_SOC|Number_Cruncher:UU
-clk => clk.IN4
-S => S.IN1
-S_reg => S_reg.IN1
-D1 => D1.IN1
-D0 => D0.IN1
-J => J.IN1
-in[0] => in[0].IN2
-in[1] => in[1].IN2
-in[2] => in[2].IN2
-in[3] => in[3].IN2
-Op_Code[0] <= RAM:RAM_A.port1
-Op_Code[1] <= RAM:RAM_A.port1
-Op_Code[2] <= RAM:RAM_A.port1
-Op_Code[3] <= RAM:RAM_A.port1
-Op_Code[4] <= RAM:RAM_A.port1
-Op_Code[5] <= RAM:RAM_A.port1
-Op_Code[6] <= RAM:RAM_A.port1
-Op_Code[7] <= RAM:RAM_A.port1
-Cout <= Adder_n:ALU.port4
+|DE1_SOC|Number_Cruncher:UU_A
+clk => clk.IN5
+Op_Code_Leds[0] <= C0.DB_MAX_OUTPUT_PORT_TYPE
+Op_Code_Leds[1] <= C1.DB_MAX_OUTPUT_PORT_TYPE
+Op_Code_Leds[2] <= S_C2.DB_MAX_OUTPUT_PORT_TYPE
+Op_Code_Leds[3] <= S_reg.DB_MAX_OUTPUT_PORT_TYPE
+Op_Code_Leds[4] <= D0.DB_MAX_OUTPUT_PORT_TYPE
+Op_Code_Leds[5] <= D1.DB_MAX_OUTPUT_PORT_TYPE
+Op_Code_Leds[6] <= RAM:RAM_A.port1
+Op_Code_Leds[7] <= RAM:RAM_A.port1
 Display1[0] <= Display_7_Segment:Display_A.port1
 Display1[1] <= Display_7_Segment:Display_A.port1
 Display1[2] <= Display_7_Segment:Display_A.port1
@@ -206,7 +196,13 @@ Display2[5] <= Display_7_Segment:Display_B.port2
 Display2[6] <= Display_7_Segment:Display_B.port2
 
 
-|DE1_SOC|Number_Cruncher:UU|Program_Counter:PC
+|DE1_SOC|Number_Cruncher:UU_A|D_ff:DF_A
+clk => out~reg0.CLK
+in => out~reg0.DATAIN
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SOC|Number_Cruncher:UU_A|Program_Counter:PC
 clk => out[0]~reg0.CLK
 clk => out[1]~reg0.CLK
 clk => out[2]~reg0.CLK
@@ -225,29 +221,22 @@ out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|RAM:RAM_A
+|DE1_SOC|Number_Cruncher:UU_A|RAM:RAM_A
 in[0] => Decoder0.IN3
-in[0] => Decoder1.IN2
 in[1] => Decoder0.IN2
-in[1] => Decoder2.IN2
 in[2] => Decoder0.IN1
-in[2] => Decoder1.IN1
-in[2] => Decoder2.IN1
 in[3] => Decoder0.IN0
-in[3] => Decoder1.IN0
-in[3] => Decoder2.IN0
-in[3] => out[7].DATAIN
 out[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-out[7] <= in[3].DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|mux4bit_2to1:Mux_A
+|DE1_SOC|Number_Cruncher:UU_A|mux4bit_2to1:Mux_A
 in_A[0] => out.DATAA
 in_A[1] => out.DATAA
 in_A[2] => out.DATAA
@@ -266,7 +255,7 @@ out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Register_En_Decoder:Reg_En_A
+|DE1_SOC|Number_Cruncher:UU_A|Register_En_Decoder:Reg_En_A
 D1 => Decoder0.IN0
 D0 => Decoder0.IN1
 out[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
@@ -274,7 +263,7 @@ out[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Register_4bit:Reg_A
+|DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_A
 in[0] => out[0]~reg0.DATAIN
 in[1] => out[1]~reg0.DATAIN
 in[2] => out[2]~reg0.DATAIN
@@ -297,7 +286,7 @@ out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Register_4bit:Reg_B
+|DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_B
 in[0] => out[0]~reg0.DATAIN
 in[1] => out[1]~reg0.DATAIN
 in[2] => out[2]~reg0.DATAIN
@@ -320,7 +309,7 @@ out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Register_4bit:Reg_O
+|DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_O
 in[0] => out[0]~reg0.DATAIN
 in[1] => out[1]~reg0.DATAIN
 in[2] => out[2]~reg0.DATAIN
@@ -343,7 +332,7 @@ out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Adder_n:ALU
+|DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU
 sub => C[0].IN1
 X[0] => X[0].IN1
 X[1] => X[1].IN1
@@ -360,7 +349,7 @@ Sum[3] <= fulladd:addbit[3].stage.port3
 Cout <= fulladd:addbit[3].stage.port4
 
 
-|DE1_SOC|Number_Cruncher:UU|Adder_n:ALU|fulladd:addbit[0].stage
+|DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[0].stage
 cin => Sum.IN1
 cin => Cout.IN0
 cin => Cout.IN0
@@ -374,7 +363,7 @@ Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Adder_n:ALU|fulladd:addbit[1].stage
+|DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[1].stage
 cin => Sum.IN1
 cin => Cout.IN0
 cin => Cout.IN0
@@ -388,7 +377,7 @@ Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Adder_n:ALU|fulladd:addbit[2].stage
+|DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[2].stage
 cin => Sum.IN1
 cin => Cout.IN0
 cin => Cout.IN0
@@ -402,7 +391,7 @@ Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Adder_n:ALU|fulladd:addbit[3].stage
+|DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[3].stage
 cin => Sum.IN1
 cin => Cout.IN0
 cin => Cout.IN0
@@ -416,7 +405,7 @@ Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A
 in[0] => in[0].IN3
 in[1] => in[1].IN3
 in[2] => in[2].IN3
@@ -438,7 +427,7 @@ Display_0[5] <= segment_7:U_G.port1
 Display_0[6] <= segment_7:U_G.port1
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A|comparator:U_C
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A|comparator:U_C
 in[0] => ~NO_FANOUT~
 in[1] => out.IN0
 in[2] => out.IN1
@@ -447,7 +436,7 @@ in[4] => out.IN1
 out <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A|segment_7_01:U_D
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7_01:U_D
 in => Display[5].DATAIN
 in => Display[0].DATAIN
 in => Display[3].DATAIN
@@ -461,7 +450,7 @@ Display[5] <= in.DB_MAX_OUTPUT_PORT_TYPE
 Display[6] <= <VCC>
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A|Circuit_A:U_E
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A|Circuit_A:U_E
 in[0] => out[0].DATAIN
 in[1] => out.IN0
 in[1] => out.IN0
@@ -478,7 +467,7 @@ out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= <GND>
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A|mux4bit_2to1:U_F
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A|mux4bit_2to1:U_F
 in_A[0] => out.DATAA
 in_A[1] => out.DATAA
 in_A[2] => out.DATAA
@@ -497,7 +486,7 @@ out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A|segment_7:U_G
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7:U_G
 in[0] => Display.IN0
 in[0] => Display.IN1
 in[0] => Display.IN0
@@ -539,7 +528,7 @@ Display[5] <= Display.DB_MAX_OUTPUT_PORT_TYPE
 Display[6] <= Display.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B
 in[0] => in[0].IN3
 in[1] => in[1].IN3
 in[2] => in[2].IN3
@@ -561,7 +550,7 @@ Display_0[5] <= segment_7:U_G.port1
 Display_0[6] <= segment_7:U_G.port1
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B|comparator:U_C
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|comparator:U_C
 in[0] => ~NO_FANOUT~
 in[1] => out.IN0
 in[2] => out.IN1
@@ -570,7 +559,7 @@ in[4] => out.IN1
 out <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B|segment_7_01:U_D
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|segment_7_01:U_D
 in => Display[5].DATAIN
 in => Display[0].DATAIN
 in => Display[3].DATAIN
@@ -584,7 +573,7 @@ Display[5] <= in.DB_MAX_OUTPUT_PORT_TYPE
 Display[6] <= <VCC>
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B|Circuit_A:U_E
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|Circuit_A:U_E
 in[0] => out[0].DATAIN
 in[1] => out.IN0
 in[1] => out.IN0
@@ -601,7 +590,7 @@ out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= <GND>
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B|mux4bit_2to1:U_F
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|mux4bit_2to1:U_F
 in_A[0] => out.DATAA
 in_A[1] => out.DATAA
 in_A[2] => out.DATAA
@@ -620,7 +609,7 @@ out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B|segment_7:U_G
+|DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|segment_7:U_G
 in[0] => Display.IN0
 in[0] => Display.IN1
 in[0] => Display.IN0

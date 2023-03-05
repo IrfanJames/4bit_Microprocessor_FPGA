@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SOC
-Sun Mar  5 20:54:27 2023
+Sun Mar  5 22:26:50 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -14,20 +14,22 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Number_Cruncher:UU|mux4bit_2to1:Mux_A
- 10. Parameter Settings for User Entity Instance: Number_Cruncher:UU|Adder_n:ALU
- 11. Parameter Settings for User Entity Instance: Number_Cruncher:UU|Display_7_Segment:Display_A|mux4bit_2to1:U_F
- 12. Parameter Settings for User Entity Instance: Number_Cruncher:UU|Display_7_Segment:Display_B|mux4bit_2to1:U_F
- 13. Port Connectivity Checks: "Number_Cruncher:UU|Display_7_Segment:Display_B"
- 14. Port Connectivity Checks: "Number_Cruncher:UU|Display_7_Segment:Display_A|mux4bit_2to1:U_F"
- 15. Port Connectivity Checks: "Number_Cruncher:UU|Display_7_Segment:Display_A|Circuit_A:U_E"
- 16. Port Connectivity Checks: "Number_Cruncher:UU|Display_7_Segment:Display_A"
- 17. Port Connectivity Checks: "Number_Cruncher:UU|Register_4bit:Reg_O"
- 18. Port Connectivity Checks: "Number_Cruncher:UU|Register_4bit:Reg_B"
- 19. Port Connectivity Checks: "Number_Cruncher:UU|Register_4bit:Reg_A"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Number_Cruncher:UU_A|mux4bit_2to1:Mux_A
+ 10. Parameter Settings for User Entity Instance: Number_Cruncher:UU_A|Adder_n:ALU
+ 11. Parameter Settings for User Entity Instance: Number_Cruncher:UU_A|Display_7_Segment:Display_A|mux4bit_2to1:U_F
+ 12. Parameter Settings for User Entity Instance: Number_Cruncher:UU_A|Display_7_Segment:Display_B|mux4bit_2to1:U_F
+ 13. Port Connectivity Checks: "Number_Cruncher:UU_A|Display_7_Segment:Display_B"
+ 14. Port Connectivity Checks: "Number_Cruncher:UU_A|Display_7_Segment:Display_A|mux4bit_2to1:U_F"
+ 15. Port Connectivity Checks: "Number_Cruncher:UU_A|Display_7_Segment:Display_A|Circuit_A:U_E"
+ 16. Port Connectivity Checks: "Number_Cruncher:UU_A|Display_7_Segment:Display_A"
+ 17. Port Connectivity Checks: "Number_Cruncher:UU_A|Register_4bit:Reg_O"
+ 18. Port Connectivity Checks: "Number_Cruncher:UU_A|Register_4bit:Reg_B"
+ 19. Port Connectivity Checks: "Number_Cruncher:UU_A|Register_4bit:Reg_A"
+ 20. Port Connectivity Checks: "Number_Cruncher:UU_A|mux4bit_2to1:Mux_A"
+ 21. Port Connectivity Checks: "Number_Cruncher:UU_A|Program_Counter:PC"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
 
 
 
@@ -54,13 +56,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar  5 20:54:27 2023          ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar  5 22:26:50 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; DE1_SOC                                        ;
 ; Top-level Entity Name           ; DE1_SOC                                        ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 16                                             ;
+; Total registers                 ; 17                                             ;
 ; Total pins                      ; 155                                            ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
@@ -191,60 +193,62 @@ https://fpgasoftware.intel.com/eula.
 ; All_Modules/Number_Cruncher.v         ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v         ;         ;
 ; All_Modules/Decoder_Register_Enable.v ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v ;         ;
 ; All_Modules/RAM.v                     ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v                     ;         ;
+; All_Modules/DFF.v                     ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v                     ;         ;
 +---------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                   ;
-+---------------------------------------------+-------------------------------------------------+
-; Resource                                    ; Usage                                           ;
-+---------------------------------------------+-------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 27                                              ;
-;                                             ;                                                 ;
-; Combinational ALUT usage for logic          ; 48                                              ;
-;     -- 7 input functions                    ; 1                                               ;
-;     -- 6 input functions                    ; 2                                               ;
-;     -- 5 input functions                    ; 2                                               ;
-;     -- 4 input functions                    ; 25                                              ;
-;     -- <=3 input functions                  ; 18                                              ;
-;                                             ;                                                 ;
-; Dedicated logic registers                   ; 16                                              ;
-;                                             ;                                                 ;
-; I/O pins                                    ; 155                                             ;
-;                                             ;                                                 ;
-; Total DSP Blocks                            ; 0                                               ;
-;                                             ;                                                 ;
-; Maximum fan-out node                        ; Number_Cruncher:UU|Program_Counter:PC|out[1]~10 ;
-; Maximum fan-out                             ; 17                                              ;
-; Total fan-out                               ; 465                                             ;
-; Average fan-out                             ; 1.08                                            ;
-+---------------------------------------------+-------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                    ;
++---------------------------------------------+--------------------------------------------------+
+; Resource                                    ; Usage                                            ;
++---------------------------------------------+--------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 26                                               ;
+;                                             ;                                                  ;
+; Combinational ALUT usage for logic          ; 47                                               ;
+;     -- 7 input functions                    ; 1                                                ;
+;     -- 6 input functions                    ; 2                                                ;
+;     -- 5 input functions                    ; 2                                                ;
+;     -- 4 input functions                    ; 29                                               ;
+;     -- <=3 input functions                  ; 13                                               ;
+;                                             ;                                                  ;
+; Dedicated logic registers                   ; 17                                               ;
+;                                             ;                                                  ;
+; I/O pins                                    ; 155                                              ;
+;                                             ;                                                  ;
+; Total DSP Blocks                            ; 0                                                ;
+;                                             ;                                                  ;
+; Maximum fan-out node                        ; Number_Cruncher:UU_A|Program_Counter:PC|out[1]~6 ;
+; Maximum fan-out                             ; 20                                               ;
+; Total fan-out                               ; 469                                              ;
+; Average fan-out                             ; 1.09                                             ;
++---------------------------------------------+--------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                    ; Entity Name         ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------+---------------------+--------------+
-; |DE1_SOC                             ; 48 (0)              ; 16 (0)                    ; 0                 ; 0          ; 155  ; 0            ; |DE1_SOC                                                               ; DE1_SOC             ; work         ;
-;    |Number_Cruncher:UU|              ; 48 (0)              ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU                                            ; Number_Cruncher     ; work         ;
-;       |Adder_n:ALU|                  ; 4 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Adder_n:ALU                                ; Adder_n             ; work         ;
-;          |fulladd:addbit[1].stage|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Adder_n:ALU|fulladd:addbit[1].stage        ; fulladd             ; work         ;
-;          |fulladd:addbit[3].stage|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Adder_n:ALU|fulladd:addbit[3].stage        ; fulladd             ; work         ;
-;       |Display_7_Segment:Display_A|  ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A                ; Display_7_Segment   ; work         ;
-;          |comparator:U_C|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A|comparator:U_C ; comparator          ; work         ;
-;          |segment_7:U_G|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_A|segment_7:U_G  ; segment_7           ; work         ;
-;       |Display_7_Segment:Display_B|  ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B                ; Display_7_Segment   ; work         ;
-;          |comparator:U_C|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B|comparator:U_C ; comparator          ; work         ;
-;          |segment_7:U_G|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Display_7_Segment:Display_B|segment_7:U_G  ; segment_7           ; work         ;
-;       |Program_Counter:PC|           ; 14 (14)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Program_Counter:PC                         ; Program_Counter     ; work         ;
-;       |RAM:RAM_A|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|RAM:RAM_A                                  ; RAM                 ; work         ;
-;       |Register_4bit:Reg_A|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Register_4bit:Reg_A                        ; Register_4bit       ; work         ;
-;       |Register_4bit:Reg_B|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Register_4bit:Reg_B                        ; Register_4bit       ; work         ;
-;       |Register_4bit:Reg_O|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Register_4bit:Reg_O                        ; Register_4bit       ; work         ;
-;       |Register_En_Decoder:Reg_En_A| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|Register_En_Decoder:Reg_En_A               ; Register_En_Decoder ; work         ;
-;       |mux4bit_2to1:Mux_A|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU|mux4bit_2to1:Mux_A                         ; mux4bit_2to1        ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                           ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name         ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
+; |DE1_SOC                             ; 47 (0)              ; 17 (0)                    ; 0                 ; 0          ; 155  ; 0            ; |DE1_SOC                                                                 ; DE1_SOC             ; work         ;
+;    |Number_Cruncher:UU_A|            ; 47 (1)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A                                            ; Number_Cruncher     ; work         ;
+;       |Adder_n:ALU|                  ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU                                ; Adder_n             ; work         ;
+;          |fulladd:addbit[1].stage|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[1].stage        ; fulladd             ; work         ;
+;          |fulladd:addbit[3].stage|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[3].stage        ; fulladd             ; work         ;
+;       |D_ff:DF_A|                    ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|D_ff:DF_A                                  ; D_ff                ; work         ;
+;       |Display_7_Segment:Display_A|  ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A                ; Display_7_Segment   ; work         ;
+;          |comparator:U_C|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A|comparator:U_C ; comparator          ; work         ;
+;          |segment_7:U_G|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7:U_G  ; segment_7           ; work         ;
+;       |Display_7_Segment:Display_B|  ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B                ; Display_7_Segment   ; work         ;
+;          |comparator:U_C|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|comparator:U_C ; comparator          ; work         ;
+;          |segment_7:U_G|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|segment_7:U_G  ; segment_7           ; work         ;
+;       |Program_Counter:PC|           ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Program_Counter:PC                         ; Program_Counter     ; work         ;
+;       |RAM:RAM_A|                    ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|RAM:RAM_A                                  ; RAM                 ; work         ;
+;       |Register_4bit:Reg_A|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_A                        ; Register_4bit       ; work         ;
+;       |Register_4bit:Reg_B|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_B                        ; Register_4bit       ; work         ;
+;       |Register_4bit:Reg_O|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_O                        ; Register_4bit       ; work         ;
+;       |Register_En_Decoder:Reg_En_A| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_En_Decoder:Reg_En_A               ; Register_En_Decoder ; work         ;
+;       |mux4bit_2to1:Mux_A|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|mux4bit_2to1:Mux_A                         ; mux4bit_2to1        ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -253,7 +257,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 17    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 4     ;
@@ -263,48 +267,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Number_Cruncher:UU|mux4bit_2to1:Mux_A ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Number_Cruncher:UU_A|mux4bit_2to1:Mux_A ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Number_Cruncher:UU|Adder_n:ALU ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; n              ; 4     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Number_Cruncher:UU_A|Adder_n:ALU ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Number_Cruncher:UU|Display_7_Segment:Display_A|mux4bit_2to1:U_F ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Number_Cruncher:UU_A|Display_7_Segment:Display_A|mux4bit_2to1:U_F ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Number_Cruncher:UU|Display_7_Segment:Display_B|mux4bit_2to1:U_F ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; n              ; 4     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Number_Cruncher:UU_A|Display_7_Segment:Display_B|mux4bit_2to1:U_F ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Number_Cruncher:UU|Display_7_Segment:Display_B"                                                                                           ;
+; Port Connectivity Checks: "Number_Cruncher:UU_A|Display_7_Segment:Display_B"                                                                                         ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                    ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
@@ -313,7 +317,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Number_Cruncher:UU|Display_7_Segment:Display_A|mux4bit_2to1:U_F"                                                                                                                 ;
+; Port Connectivity Checks: "Number_Cruncher:UU_A|Display_7_Segment:Display_A|mux4bit_2to1:U_F"                                                                                                               ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                                                                          ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -324,7 +328,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Number_Cruncher:UU|Display_7_Segment:Display_A|Circuit_A:U_E"                         ;
+; Port Connectivity Checks: "Number_Cruncher:UU_A|Display_7_Segment:Display_A|Circuit_A:U_E"                       ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
@@ -333,7 +337,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Number_Cruncher:UU|Display_7_Segment:Display_A"                                                                                           ;
+; Port Connectivity Checks: "Number_Cruncher:UU_A|Display_7_Segment:Display_A"                                                                                         ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                    ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
@@ -341,34 +345,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Number_Cruncher:UU|Register_4bit:Reg_O"                                                                                                                                                ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "Number_Cruncher:UU_A|Register_4bit:Reg_O" ;
++-------+-------+----------+-------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                   ;
++-------+-------+----------+-------------------------------------------+
+; reset ; Input ; Info     ; Stuck at VCC                              ;
++-------+-------+----------+-------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Number_Cruncher:UU|Register_4bit:Reg_B"                                                                                                                                                ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "Number_Cruncher:UU_A|Register_4bit:Reg_B" ;
++-------+-------+----------+-------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                   ;
++-------+-------+----------+-------------------------------------------+
+; reset ; Input ; Info     ; Stuck at VCC                              ;
++-------+-------+----------+-------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Number_Cruncher:UU|Register_4bit:Reg_A"                                                                                                                                                ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "Number_Cruncher:UU_A|Register_4bit:Reg_A" ;
++-------+-------+----------+-------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                   ;
++-------+-------+----------+-------------------------------------------+
+; reset ; Input ; Info     ; Stuck at VCC                              ;
++-------+-------+----------+-------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "Number_Cruncher:UU_A|mux4bit_2to1:Mux_A" ;
++---------+-------+----------+----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                ;
++---------+-------+----------+----------------------------------------+
+; in_B[3] ; Input ; Info     ; Stuck at GND                           ;
++---------+-------+----------+----------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "Number_Cruncher:UU_A|Program_Counter:PC" ;
++----------------+-------+----------+---------------------------------+
+; Port           ; Type  ; Severity ; Details                         ;
++----------------+-------+----------+---------------------------------+
+; custom_data[3] ; Input ; Info     ; Stuck at GND                    ;
++----------------+-------+----------+---------------------------------+
 
 
 +-----------------------------------------------------+
@@ -376,24 +395,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 16                          ;
+; arriav_ff             ; 17                          ;
 ;     CLR               ; 4                           ;
 ;     ENA               ; 12                          ;
+;     plain             ; 1                           ;
 ; arriav_io_obuf        ; 56                          ;
-; arriav_lcell_comb     ; 50                          ;
+; arriav_lcell_comb     ; 52                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 49                          ;
+;     normal            ; 51                          ;
 ;         0 data inputs ; 2                           ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 25                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 29                          ;
 ;         5 data inputs ; 2                           ;
 ;         6 data inputs ; 2                           ;
 ; boundary_port         ; 155                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.04                        ;
+; Average LUT depth     ; 0.92                        ;
 +-----------------------+-----------------------------+
 
 
@@ -412,14 +433,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun Mar  5 20:54:17 2023
+    Info: Processing started: Sun Mar  5 22:26:40 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SOC -c DE1_SOC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.v
     Info (12023): Found entity 1: DE1_SOC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file all_modules/testing.v
-    Info (12023): Found entity 1: testbench File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/testing.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/mux_n.v
     Info (12023): Found entity 1: mux4bit_2to1 File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file all_modules/add_sub_n.v
@@ -441,6 +460,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file all_mod
     Info (12023): Found entity 1: Register_En_Decoder File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/ram.v
     Info (12023): Found entity 1: RAM File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file all_modules/test_cruncher.v
+    Info (12023): Found entity 1: test_Cruncher File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/test_Cruncher.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file all_modules/dff.v
+    Info (12023): Found entity 1: D_ff File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v Line: 4
 Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(41): created implicit net for "a" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 41
 Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(42): created implicit net for "b" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 42
 Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(43): created implicit net for "c" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 43
@@ -455,7 +478,7 @@ Warning (10034): Output port "DRAM_ADDR" at DE1_SOC.v(21) has no driver File: D:
 Warning (10034): Output port "DRAM_BA" at DE1_SOC.v(22) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 22
 Warning (10034): Output port "HEX4" at DE1_SOC.v(38) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
 Warning (10034): Output port "HEX5" at DE1_SOC.v(39) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-Warning (10034): Output port "LEDR[8]" at DE1_SOC.v(49) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
+Warning (10034): Output port "LEDR[9..8]" at DE1_SOC.v(49) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
 Warning (10034): Output port "ADC_CONVST" at DE1_SOC.v(9) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 9
 Warning (10034): Output port "ADC_DIN" at DE1_SOC.v(10) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 10
 Warning (10034): Output port "ADC_SCLK" at DE1_SOC.v(12) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 12
@@ -468,25 +491,26 @@ Warning (10034): Output port "DRAM_RAS_N" at DE1_SOC.v(29) has no driver File: D
 Warning (10034): Output port "DRAM_UDQM" at DE1_SOC.v(30) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 30
 Warning (10034): Output port "DRAM_WE_N" at DE1_SOC.v(31) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 31
 Warning (10034): Output port "IRDA_TXD" at DE1_SOC.v(43) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 43
-Info (12128): Elaborating entity "Number_Cruncher" for hierarchy "Number_Cruncher:UU" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 70
-Info (12128): Elaborating entity "Program_Counter" for hierarchy "Number_Cruncher:UU|Program_Counter:PC" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 8
+Info (12128): Elaborating entity "Number_Cruncher" for hierarchy "Number_Cruncher:UU_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 70
+Info (12128): Elaborating entity "D_ff" for hierarchy "Number_Cruncher:UU_A|D_ff:DF_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 15
+Info (12128): Elaborating entity "Program_Counter" for hierarchy "Number_Cruncher:UU_A|Program_Counter:PC" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 17
 Warning (10230): Verilog HDL assignment warning at Program_Counter.v(14): truncated value with size 32 to match size of target (4) File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
-Info (12128): Elaborating entity "RAM" for hierarchy "Number_Cruncher:UU|RAM:RAM_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 11
-Info (12128): Elaborating entity "mux4bit_2to1" for hierarchy "Number_Cruncher:UU|mux4bit_2to1:Mux_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 18
-Info (12128): Elaborating entity "Register_En_Decoder" for hierarchy "Number_Cruncher:UU|Register_En_Decoder:Reg_En_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 22
-Info (12128): Elaborating entity "Register_4bit" for hierarchy "Number_Cruncher:UU|Register_4bit:Reg_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 24
-Info (12128): Elaborating entity "Adder_n" for hierarchy "Number_Cruncher:UU|Adder_n:ALU" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 28
-Info (12128): Elaborating entity "fulladd" for hierarchy "Number_Cruncher:UU|Adder_n:ALU|fulladd:addbit[0].stage" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 24
-Info (12128): Elaborating entity "Display_7_Segment" for hierarchy "Number_Cruncher:UU|Display_7_Segment:Display_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 30
-Info (12128): Elaborating entity "comparator" for hierarchy "Number_Cruncher:UU|Display_7_Segment:Display_A|comparator:U_C" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 10
-Info (12128): Elaborating entity "segment_7_01" for hierarchy "Number_Cruncher:UU|Display_7_Segment:Display_A|segment_7_01:U_D" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 11
-Info (12128): Elaborating entity "Circuit_A" for hierarchy "Number_Cruncher:UU|Display_7_Segment:Display_A|Circuit_A:U_E" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 15
+Info (12128): Elaborating entity "RAM" for hierarchy "Number_Cruncher:UU_A|RAM:RAM_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 19
+Info (12128): Elaborating entity "mux4bit_2to1" for hierarchy "Number_Cruncher:UU_A|mux4bit_2to1:Mux_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 24
+Info (12128): Elaborating entity "Register_En_Decoder" for hierarchy "Number_Cruncher:UU_A|Register_En_Decoder:Reg_En_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 28
+Info (12128): Elaborating entity "Register_4bit" for hierarchy "Number_Cruncher:UU_A|Register_4bit:Reg_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 30
+Info (12128): Elaborating entity "Adder_n" for hierarchy "Number_Cruncher:UU_A|Adder_n:ALU" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 34
+Info (12128): Elaborating entity "fulladd" for hierarchy "Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[0].stage" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 24
+Info (12128): Elaborating entity "Display_7_Segment" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 36
+Info (12128): Elaborating entity "comparator" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|comparator:U_C" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 10
+Info (12128): Elaborating entity "segment_7_01" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7_01:U_D" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 11
+Info (12128): Elaborating entity "Circuit_A" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|Circuit_A:U_E" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 15
 Warning (10036): Verilog HDL or VHDL warning at 7_Segment_0-F.v(41): object "a" assigned a value but never read File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 41
-Info (12128): Elaborating entity "segment_7" for hierarchy "Number_Cruncher:UU|Display_7_Segment:Display_A|segment_7:U_G" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 17
+Info (12128): Elaborating entity "segment_7" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7:U_G" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 17
 Warning (12020): Port "ordered port 0" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
 Warning (12020): Port "ordered port 1" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
 Warning (12030): Port "ordered port 3" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be left dangling without any fan-out logic. File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
-Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
     Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
@@ -545,10 +569,9 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GPIO[34]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
     Warning (13040): bidirectional pin "GPIO[35]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "Number_Cruncher:UU|Program_Counter:PC|out[2]" is converted into an equivalent circuit using register "Number_Cruncher:UU|Program_Counter:PC|out[2]~_emulated" and latch "Number_Cruncher:UU|Program_Counter:PC|out[2]~1" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
-    Warning (13310): Register "Number_Cruncher:UU|Program_Counter:PC|out[3]" is converted into an equivalent circuit using register "Number_Cruncher:UU|Program_Counter:PC|out[3]~_emulated" and latch "Number_Cruncher:UU|Program_Counter:PC|out[3]~5" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
-    Warning (13310): Register "Number_Cruncher:UU|Program_Counter:PC|out[1]" is converted into an equivalent circuit using register "Number_Cruncher:UU|Program_Counter:PC|out[1]~_emulated" and latch "Number_Cruncher:UU|Program_Counter:PC|out[1]~9" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
-    Warning (13310): Register "Number_Cruncher:UU|Program_Counter:PC|out[0]" is converted into an equivalent circuit using register "Number_Cruncher:UU|Program_Counter:PC|out[0]~_emulated" and latch "Number_Cruncher:UU|Program_Counter:PC|out[0]~13" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
+    Warning (13310): Register "Number_Cruncher:UU_A|Program_Counter:PC|out[2]" is converted into an equivalent circuit using register "Number_Cruncher:UU_A|Program_Counter:PC|out[2]~_emulated" and latch "Number_Cruncher:UU_A|Program_Counter:PC|out[2]~1" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
+    Warning (13310): Register "Number_Cruncher:UU_A|Program_Counter:PC|out[1]" is converted into an equivalent circuit using register "Number_Cruncher:UU_A|Program_Counter:PC|out[1]~_emulated" and latch "Number_Cruncher:UU_A|Program_Counter:PC|out[1]~5" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
+    Warning (13310): Register "Number_Cruncher:UU_A|Program_Counter:PC|out[0]" is converted into an equivalent circuit using register "Number_Cruncher:UU_A|Program_Counter:PC|out[0]~_emulated" and latch "Number_Cruncher:UU_A|Program_Counter:PC|out[0]~9" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ADC_CONVST" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 9
     Warning (13410): Pin "ADC_DIN" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 10
@@ -598,10 +621,11 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX5[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
     Warning (13410): Pin "IRDA_TXD" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 43
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 10 input pin(s) that do not drive logic
+Warning (21074): Design contains 19 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ADC_DOUT" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 11
     Warning (15610): No output dependent on input pin "CLOCK2_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 15
     Warning (15610): No output dependent on input pin "CLOCK3_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 16
@@ -612,15 +636,24 @@ Warning (21074): Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
     Warning (15610): No output dependent on input pin "KEY[2]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
     Warning (15610): No output dependent on input pin "KEY[3]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
-Info (21057): Implemented 215 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[0]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[1]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[2]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[3]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[4]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[5]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[6]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[7]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[8]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+Info (21057): Implemented 214 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 79 output pins
     Info (21060): Implemented 56 bidirectional pins
-    Info (21061): Implemented 60 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 155 warnings
+    Info (21061): Implemented 59 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 164 warnings
     Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Sun Mar  5 20:54:28 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Processing ended: Sun Mar  5 22:26:50 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
 
 
