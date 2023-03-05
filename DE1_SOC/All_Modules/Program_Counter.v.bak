@@ -1,9 +1,9 @@
 //////////////////////////////////////////////////////////////////////////
 // 4bit Parallel Register
 
-module Register_4bit (in, en, reset, clk, out);
-	input [3:0] in;
-	input en, reset, clk;
+module Register_4bit (clk, jump, custom_data, out);
+	input [3:0] custom_data;
+	input clk, jump;
 	output reg [3:0] out;
 	
 	always @(posedge clk, negedge reset)

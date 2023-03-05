@@ -506,6 +506,9 @@ set_global_assignment -name VERILOG_FILE All_Modules/testing.v
 set_global_assignment -name VERILOG_FILE All_Modules/Mux_n.v
 set_global_assignment -name VERILOG_FILE All_Modules/Add_Sub_n.v
 set_global_assignment -name VERILOG_FILE "All_Modules/7_Segment_0-F.v"
-set_global_assignment -name SDC_FILE DE1_SOC.SDC
 set_global_assignment -name VERILOG_FILE All_Modules/Register.v
+set_global_assignment -name VERILOG_FILE All_Modules/Program_Counter.v
+set_global_assignment -name VERILOG_FILE All_Modules/Number_Cruncher.v
+set_global_assignment -name VERILOG_FILE All_Modules/Decoder_Register_Enable.v
+set_global_assignment -name VERILOG_FILE All_Modules/RAM.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
