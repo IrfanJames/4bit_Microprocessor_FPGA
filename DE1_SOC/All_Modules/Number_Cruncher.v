@@ -1,12 +1,18 @@
-module Number_Cruncher(clk, S, S_reg, D1, D0, in, ALU_Out, Cout, Display1, Display0);
-	input clk, S, S_reg, D1, D0;
+module Number_Cruncher(clk, S, S_reg, D1, D0, J, in, Op_Code, Cout, Display1, Display0, Display3, Display2);
+	input clk, S, S_reg, D1, D0, J;
 	input  [3:0] in;
-	output  [6:0] Display1, Display0;
+	output [6:0] Display1, Display0, Display3, Display2;
 	output Cout;
+	
+	wire   [3:0] PC_Out;
+	Program_Counter PC (clk, J, in, PC_Out);
+	
+	output [7:0] Op_Code;
+	RAM RAM_A (PC_Out, Op_Code);
 	
 	wire   [3:0] ALU_InA;
 	wire   [3:0] ALU_InB;
-	output [3:0] ALU_Out;
+	wire   [3:0] ALU_Out;
 	
 	wire   [3:0] MUX_Out;
 	mux4bit_2to1 Mux_A (ALU_Out, in, S_reg, MUX_Out);
@@ -21,6 +27,8 @@ module Number_Cruncher(clk, S, S_reg, D1, D0, in, ALU_Out, Cout, Display1, Displ
 	
 	Adder_n ALU (S, ALU_InA, ALU_InB, ALU_Out, Cout);
 	
-	Display_7_Segment Display (Reg_O_Out, Display1, Display0);
+	Display_7_Segment Display_A (Reg_O_Out, Display1, Display0);
+	
+	Display_7_Segment Display_B (PC_Out, Display3, Display2);
 	
 endmodule
