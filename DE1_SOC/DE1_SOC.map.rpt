@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SOC
-Mon Mar 06 20:05:49 2023
+Mon Mar 06 20:27:34 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 06 20:05:48 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 06 20:27:33 2023       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SOC                                     ;
 ; Top-level Entity Name           ; DE1_SOC                                     ;
@@ -204,12 +204,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------------------------------+
 ; Estimate of Logic utilization (ALMs needed) ; 22                                             ;
 ;                                             ;                                                ;
-; Combinational ALUT usage for logic          ; 39                                             ;
+; Combinational ALUT usage for logic          ; 38                                             ;
 ;     -- 7 input functions                    ; 0                                              ;
-;     -- 6 input functions                    ; 2                                              ;
-;     -- 5 input functions                    ; 5                                              ;
-;     -- 4 input functions                    ; 25                                             ;
-;     -- <=3 input functions                  ; 7                                              ;
+;     -- 6 input functions                    ; 3                                              ;
+;     -- 5 input functions                    ; 6                                              ;
+;     -- 4 input functions                    ; 21                                             ;
+;     -- <=3 input functions                  ; 8                                              ;
 ;                                             ;                                                ;
 ; Dedicated logic registers                   ; 17                                             ;
 ;                                             ;                                                ;
@@ -217,9 +217,9 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                ;
 ; Total DSP Blocks                            ; 0                                              ;
 ;                                             ;                                                ;
-; Maximum fan-out node                        ; Number_Cruncher:UU_A|Program_Counter:PC|out[1] ;
-; Maximum fan-out                             ; 20                                             ;
-; Total fan-out                               ; 442                                            ;
+; Maximum fan-out node                        ; Number_Cruncher:UU_A|Program_Counter:PC|out[3] ;
+; Maximum fan-out                             ; 23                                             ;
+; Total fan-out                               ; 440                                            ;
 ; Average fan-out                             ; 1.05                                           ;
 +---------------------------------------------+------------------------------------------------+
 
@@ -229,11 +229,12 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name         ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
-; |DE1_SOC                             ; 39 (0)              ; 17 (0)                    ; 0                 ; 0          ; 155  ; 0            ; |DE1_SOC                                                                 ; DE1_SOC             ; work         ;
-;    |Number_Cruncher:UU_A|            ; 39 (0)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A                                            ; Number_Cruncher     ; work         ;
+; |DE1_SOC                             ; 38 (0)              ; 17 (0)                    ; 0                 ; 0          ; 155  ; 0            ; |DE1_SOC                                                                 ; DE1_SOC             ; work         ;
+;    |Number_Cruncher:UU_A|            ; 38 (0)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A                                            ; Number_Cruncher     ; work         ;
 ;       |Adder_n:ALU|                  ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU                                ; Adder_n             ; work         ;
-;          |fulladd:addbit[1].stage|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[1].stage        ; fulladd             ; work         ;
-;          |fulladd:addbit[3].stage|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[3].stage        ; fulladd             ; work         ;
+;          |fulladd:addbit[0].stage|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[0].stage        ; fulladd             ; work         ;
+;          |fulladd:addbit[2].stage|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[2].stage        ; fulladd             ; work         ;
+;          |fulladd:addbit[3].stage|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[3].stage        ; fulladd             ; work         ;
 ;       |D_ff:DF_A|                    ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|D_ff:DF_A                                  ; D_ff                ; work         ;
 ;       |Display_7_Segment:Display_A|  ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A                ; Display_7_Segment   ; work         ;
 ;          |comparator:U_C|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A|comparator:U_C ; comparator          ; work         ;
@@ -242,7 +243,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |comparator:U_C|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|comparator:U_C ; comparator          ; work         ;
 ;          |segment_7:U_G|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|segment_7:U_G  ; segment_7           ; work         ;
 ;       |Program_Counter:PC|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Program_Counter:PC                         ; Program_Counter     ; work         ;
-;       |RAM:RAM_A|                    ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|RAM:RAM_A                                  ; RAM                 ; work         ;
+;       |RAM:RAM_A|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|RAM:RAM_A                                  ; RAM                 ; work         ;
 ;       |Register_4bit:Reg_A|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_A                        ; Register_4bit       ; work         ;
 ;       |Register_4bit:Reg_B|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_B                        ; Register_4bit       ; work         ;
 ;       |Register_4bit:Reg_O|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_O                        ; Register_4bit       ; work         ;
@@ -399,19 +400,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 12                          ;
 ;     plain             ; 5                           ;
 ; arriav_io_obuf        ; 56                          ;
-; arriav_lcell_comb     ; 42                          ;
-;     normal            ; 42                          ;
+; arriav_lcell_comb     ; 40                          ;
+;     normal            ; 40                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 3                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 25                          ;
-;         5 data inputs ; 5                           ;
-;         6 data inputs ; 2                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 21                          ;
+;         5 data inputs ; 6                           ;
+;         6 data inputs ; 3                           ;
 ; boundary_port         ; 155                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 0.84                        ;
+; Average LUT depth     ; 0.78                        ;
 +-----------------------+-----------------------------+
 
 
@@ -420,7 +420,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -430,7 +430,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Mar 06 20:05:00 2023
+    Info: Processing started: Mon Mar 06 20:25:58 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SOC -c DE1_SOC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -637,15 +637,15 @@ Warning (21074): Design contains 19 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
     Warning (15610): No output dependent on input pin "SW[8]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
     Warning (15610): No output dependent on input pin "SW[9]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-Info (21057): Implemented 206 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 205 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 79 output pins
     Info (21060): Implemented 56 bidirectional pins
-    Info (21061): Implemented 51 logic cells
+    Info (21061): Implemented 50 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 159 warnings
-    Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Mon Mar 06 20:05:49 2023
-    Info: Elapsed time: 00:00:49
-    Info: Total CPU time (on all processors): 00:01:33
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Mon Mar 06 20:27:34 2023
+    Info: Elapsed time: 00:01:36
+    Info: Total CPU time (on all processors): 00:02:08
 
 
