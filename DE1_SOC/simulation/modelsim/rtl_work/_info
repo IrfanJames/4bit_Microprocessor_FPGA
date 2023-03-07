@@ -8,53 +8,399 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/hp/Desktop/DE1_SOC/simulation/modelsim
-vDE1_SOC
-Z1 !s110 1677503215
+Z0 dE:/4bit_Microprocessor_FPGA/DE1_SOC/simulation/modelsim
+vAdder_n
+Z1 !s110 1678174808
 !i10b 1
-!s100 d]]NjZm@6f>CHgnfaDz:<0
+!s100 80nz`5?nC^7;PhY:D0Z930
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I3[W28U^zE6Im]n=KBQmdP2
+Ii7<m84hF_;oG2^Xkd^cG02
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1677502653
-Z5 8C:/Users/hp/Desktop/DE1_SOC/de1_soc.v
-Z6 FC:/Users/hp/Desktop/DE1_SOC/de1_soc.v
-!i122 0
-L0 6 109
+Z4 w1678098926
+Z5 8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v
+Z6 FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v
+!i122 2
+L0 3 26
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1677503215.000000
-!s107 C:/Users/hp/Desktop/DE1_SOC/de1_soc.v|
-Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/hp/Desktop/DE1_SOC|C:/Users/hp/Desktop/DE1_SOC/de1_soc.v|
+Z8 !s108 1678174808.000000
+Z9 !s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v|
 !i113 1
-Z10 o-vlog01compat -work work
-Z11 !s92 -vlog01compat -work work +incdir+C:/Users/hp/Desktop/DE1_SOC
-Z12 tCvgOpt 0
-n@d@e1_@s@o@c
-vmux4bit_2to1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules
+Z13 tCvgOpt 0
+n@adder_n
+vCircuit_A
+Z14 !s110 1678174809
+!i10b 1
+!s100 9F3ziQJ_b0=FM@O^8dTLd2
+R2
+IACU7`M^j[PEgWo@0ETT`51
+R3
+R0
+R4
+Z15 8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v
+Z16 FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v
+!i122 3
+L0 37 16
+R7
+r1
+!s85 0
+31
+Z17 !s108 1678174809.000000
+Z18 !s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v|
+Z19 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v|
+!i113 1
+R11
+R12
+R13
+n@circuit_@a
+vcomparator
+R14
+!i10b 1
+!s100 N^dPc?H?M<imBeA;gz=ge1
+R2
+INLYDd@3md:^a8^SNCF>g80
+R3
+R0
+R4
+R15
+R16
+!i122 3
+L0 27 6
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+R13
+vD_ff
+Z20 !s110 1678174811
+!i10b 1
+!s100 f9bBdOR0B54ZXzPfR_Cof2
+R2
+IDzeCh4?@>fcaF0INH6l0o1
+R3
+R0
+R4
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v
+!i122 9
+L0 4 9
+R7
+r1
+!s85 0
+31
+Z21 !s108 1678174811.000000
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v|
+!i113 1
+R11
+R12
+R13
+n@d_ff
+vDE1_SOC
 R1
 !i10b 1
-!s100 B6Jo[OJ3603@jki=96H<O1
+!s100 VOV4?TV0b<LY>PX4HY=I43
 R2
-Im5U8WihKLkQ:4aXTF]c9i2
+IajJ_Q:jBeKia2ND9>nzoP0
+R3
+R0
+w1678174046
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v
+!i122 0
+L0 6 70
+R7
+r1
+!s85 0
+31
+!s108 1678174807.000000
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC|E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v|
+!i113 1
+R11
+Z22 !s92 -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC
+R13
+n@d@e1_@s@o@c
+vDisplay_7_Segment
+R14
+!i10b 1
+!s100 =bcdZE>FbM?>QO5Ma?W4C3
+R2
+Ib_PYK=HFiV1jPE9:lBKG:2
+R3
+R0
+R4
+R15
+R16
+!i122 3
+L0 5 14
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+R13
+n@display_7_@segment
+vfulladd
+R1
+!i10b 1
+!s100 XO;BdCdB^Y8Gmln9KB4hl2
+R2
+IWiYnWD`QEWUIAkh1V9TU33
 R3
 R0
 R4
 R5
 R6
-!i122 0
-L0 116 9
+!i122 2
+L0 31 7
 R7
 r1
 !s85 0
 31
 R8
-Z13 !s107 C:/Users/hp/Desktop/DE1_SOC/de1_soc.v|
 R9
-!i113 1
 R10
+!i113 1
 R11
 R12
+R13
+vmux4bit_2to1
+R1
+!i10b 1
+!s100 Lfgo:z?UmW?_LZUfLlSnR2
+R2
+IMPX=FL2cQRIT0b4ZU=T8l2
+R3
+R0
+R4
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v
+!i122 1
+L0 3 8
+R7
+r1
+!s85 0
+31
+R8
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v|
+!i113 1
+R11
+R12
+R13
+vNumber_Cruncher
+Z23 !s110 1678174810
+!i10b 1
+!s100 T`lSH<H1PDS3o_hS9?U:k3
+R2
+IdemN[X4LC8m8DfIinLAb:1
+R3
+R0
+w1678169604
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v
+!i122 6
+L0 1 39
+R7
+r1
+!s85 0
+31
+Z24 !s108 1678174810.000000
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v|
+!i113 1
+R11
+R12
+R13
+n@number_@cruncher
+vProgram_Counter
+R14
+!i10b 1
+!s100 iz3emNJY_zHjMchTV65Vm1
+R2
+I17OMQIo8gXYR?C<iSRLiA2
+R3
+R0
+w1678174333
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v
+!i122 5
+L0 6 18
+R7
+r1
+!s85 0
+31
+R17
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v|
+!i113 1
+R11
+R12
+R13
+n@program_@counter
+vRAM
+R20
+!i10b 1
+!s100 Yb6GLWVl;>4ZKkI@z@bBX3
+R2
+I3iH[B>kIhS]eFNzfXTRPD0
+R3
+R0
+w1678168724
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v
+!i122 8
+L0 5 21
+R7
+r1
+!s85 0
+31
+R24
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v|
+!i113 1
+R11
+R12
+R13
+n@r@a@m
+vRegister_4bit
+R14
+!i10b 1
+!s100 jac5nHoeJI5JEj]P;M`2f2
+R2
+IBoOKIVj2Kn6jWZ3ZPk1n21
+R3
+R0
+R4
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v
+!i122 4
+L0 4 11
+R7
+r1
+!s85 0
+31
+R17
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v|
+!i113 1
+R11
+R12
+R13
+n@register_4bit
+vRegister_En_Decoder
+R23
+!i10b 1
+!s100 @W1TAeQY9g;kY`FYGWW_c1
+R2
+I53TYez7X06F;^iL8^MU^20
+R3
+R0
+R4
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v
+!i122 7
+L0 12 14
+R7
+r1
+!s85 0
+31
+R24
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v|
+!i113 1
+R11
+R12
+R13
+n@register_@en_@decoder
+vsegment_7
+R14
+!i10b 1
+!s100 Z00Kh_]8?k<Thbm4JjY_53
+R2
+I[EWLRYoKVYfoPCengUJU^1
+R3
+R0
+R4
+R15
+R16
+!i122 3
+L0 57 17
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+R13
+vsegment_7_01
+R14
+!i10b 1
+!s100 _oK<OMLXo5OhhV2mk7VVL1
+R2
+I^2iE;nZl;TeL=ZIH8L4`32
+R3
+R0
+R4
+R15
+R16
+!i122 3
+L0 78 12
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R11
+R12
+R13
+vTest
+R20
+!i10b 1
+!s100 hh]GL@T7CW9ef:KC`kYKC0
+R2
+I]KoC=NJn:;g3O27BHUk]>3
+R3
+R0
+w1678174148
+8E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v
+FE:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v
+!i122 10
+L0 1 31
+R7
+r1
+!s85 0
+31
+R21
+!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC|E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v|
+!i113 1
+R11
+R22
+R13
+n@test

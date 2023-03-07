@@ -1,0 +1,39 @@
+module Test_Cruncher();
+    reg clk;
+	 wire Cout;
+	 
+	 initial 
+	 begin 
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+
+	 end
+endmodule

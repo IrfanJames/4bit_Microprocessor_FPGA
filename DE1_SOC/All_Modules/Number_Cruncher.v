@@ -1,14 +1,14 @@
-module Number_Cruncher(clk, Op_Code_Leds, Display1, Display0, Display3, Display2);
+module Number_Cruncher(clk, OP_Code, Display1, Display0, Display3, Display2);
 	input clk;
 	output [6:0] Display1, Display0, Display3, Display2;
-	output [7:0] Op_Code_Leds;
+	output [7:0] OP_Code;
 	
 	wire         ALU_Cout;
 	wire   [3:0] ALU_InA;
 	wire   [3:0] ALU_InB;
 	wire   [3:0] ALU_Out;
 	
-	wire   [3:0] PC_Out;
+	wire [3:0] PC_Out;
 	wire J, C, D1, D0, S_reg, S_C2, C1, C0; // {...} is OP_Code
 	
 	wire DFF_Out_Cout, jump;
@@ -16,8 +16,8 @@ module Number_Cruncher(clk, Op_Code_Leds, Display1, Display0, Display3, Display2
 	assign jump = J | (C & DFF_Out_Cout);
 	Program_Counter PC (clk, jump, {1'b0, S_C2, C1, C0}, PC_Out); // {...} is part of OP_Code
 	
-	RAM RAM_A (PC_Out, {J, C, D1, D0, S_reg, S_C2, C1, C0}); // {...} is OP_Code
-	assign Op_Code_Leds = {J, C, D1, D0, S_reg, S_C2, C1, C0}; // {...} is OP_Code
+	assign OP_Code = {J, C, D1, D0, S_reg, S_C2, C1, C0}; // {...} is OP_Code
+	RAM RAM_A (PC_Out, {J, C, D1, D0, S_reg, S_C2, C1, C0});
 	
 	
 	wire   [3:0] MUX_Out;

@@ -1,0 +1,28 @@
+module Test();
+
+    reg clk;
+	 wire out;
+	 
+	 Number_Cruncher dut(clk,out);
+	 
+	 initial
+	 begin
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 clk=0; #10; clk=1; #10;
+	 end
+
+
+endmodule

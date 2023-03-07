@@ -1,6 +1,6 @@
 Analysis & Synthesis report for DE1_SOC
-Sun Mar  5 22:26:50 2023
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Mon Mar 06 20:05:49 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -53,27 +53,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar  5 22:26:50 2023          ;
-; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                   ; DE1_SOC                                        ;
-; Top-level Entity Name           ; DE1_SOC                                        ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 17                                             ;
-; Total pins                      ; 155                                            ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Mar 06 20:05:48 2023       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; DE1_SOC                                     ;
+; Top-level Entity Name           ; DE1_SOC                                     ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 17                                          ;
+; Total pins                      ; 155                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -184,44 +184,44 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
 +---------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; DE1_SOC.v                             ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v                             ;         ;
-; All_Modules/Mux_n.v                   ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v                   ;         ;
-; All_Modules/Add_Sub_n.v               ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v               ;         ;
-; All_Modules/7_Segment_0-F.v           ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v           ;         ;
-; All_Modules/Register.v                ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v                ;         ;
-; All_Modules/Program_Counter.v         ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v         ;         ;
-; All_Modules/Number_Cruncher.v         ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v         ;         ;
-; All_Modules/Decoder_Register_Enable.v ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v ;         ;
-; All_Modules/RAM.v                     ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v                     ;         ;
-; All_Modules/DFF.v                     ; yes             ; User Verilog HDL File  ; D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v                     ;         ;
+; DE1_SOC.v                             ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v                             ;         ;
+; All_Modules/Mux_n.v                   ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v                   ;         ;
+; All_Modules/Add_Sub_n.v               ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v               ;         ;
+; All_Modules/7_Segment_0-F.v           ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v           ;         ;
+; All_Modules/Register.v                ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v                ;         ;
+; All_Modules/Program_Counter.v         ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v         ;         ;
+; All_Modules/Number_Cruncher.v         ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v         ;         ;
+; All_Modules/Decoder_Register_Enable.v ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v ;         ;
+; All_Modules/RAM.v                     ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v                     ;         ;
+; All_Modules/DFF.v                     ; yes             ; User Verilog HDL File  ; E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v                     ;         ;
 +---------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                    ;
-+---------------------------------------------+--------------------------------------------------+
-; Resource                                    ; Usage                                            ;
-+---------------------------------------------+--------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 26                                               ;
-;                                             ;                                                  ;
-; Combinational ALUT usage for logic          ; 47                                               ;
-;     -- 7 input functions                    ; 1                                                ;
-;     -- 6 input functions                    ; 2                                                ;
-;     -- 5 input functions                    ; 2                                                ;
-;     -- 4 input functions                    ; 29                                               ;
-;     -- <=3 input functions                  ; 13                                               ;
-;                                             ;                                                  ;
-; Dedicated logic registers                   ; 17                                               ;
-;                                             ;                                                  ;
-; I/O pins                                    ; 155                                              ;
-;                                             ;                                                  ;
-; Total DSP Blocks                            ; 0                                                ;
-;                                             ;                                                  ;
-; Maximum fan-out node                        ; Number_Cruncher:UU_A|Program_Counter:PC|out[1]~6 ;
-; Maximum fan-out                             ; 20                                               ;
-; Total fan-out                               ; 469                                              ;
-; Average fan-out                             ; 1.09                                             ;
-+---------------------------------------------+--------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                  ;
++---------------------------------------------+------------------------------------------------+
+; Resource                                    ; Usage                                          ;
++---------------------------------------------+------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 22                                             ;
+;                                             ;                                                ;
+; Combinational ALUT usage for logic          ; 39                                             ;
+;     -- 7 input functions                    ; 0                                              ;
+;     -- 6 input functions                    ; 2                                              ;
+;     -- 5 input functions                    ; 5                                              ;
+;     -- 4 input functions                    ; 25                                             ;
+;     -- <=3 input functions                  ; 7                                              ;
+;                                             ;                                                ;
+; Dedicated logic registers                   ; 17                                             ;
+;                                             ;                                                ;
+; I/O pins                                    ; 155                                            ;
+;                                             ;                                                ;
+; Total DSP Blocks                            ; 0                                              ;
+;                                             ;                                                ;
+; Maximum fan-out node                        ; Number_Cruncher:UU_A|Program_Counter:PC|out[1] ;
+; Maximum fan-out                             ; 20                                             ;
+; Total fan-out                               ; 442                                            ;
+; Average fan-out                             ; 1.05                                           ;
++---------------------------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -229,10 +229,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name         ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
-; |DE1_SOC                             ; 47 (0)              ; 17 (0)                    ; 0                 ; 0          ; 155  ; 0            ; |DE1_SOC                                                                 ; DE1_SOC             ; work         ;
-;    |Number_Cruncher:UU_A|            ; 47 (1)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A                                            ; Number_Cruncher     ; work         ;
-;       |Adder_n:ALU|                  ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU                                ; Adder_n             ; work         ;
-;          |fulladd:addbit[1].stage|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[1].stage        ; fulladd             ; work         ;
+; |DE1_SOC                             ; 39 (0)              ; 17 (0)                    ; 0                 ; 0          ; 155  ; 0            ; |DE1_SOC                                                                 ; DE1_SOC             ; work         ;
+;    |Number_Cruncher:UU_A|            ; 39 (0)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A                                            ; Number_Cruncher     ; work         ;
+;       |Adder_n:ALU|                  ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU                                ; Adder_n             ; work         ;
+;          |fulladd:addbit[1].stage|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[1].stage        ; fulladd             ; work         ;
 ;          |fulladd:addbit[3].stage|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[3].stage        ; fulladd             ; work         ;
 ;       |D_ff:DF_A|                    ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|D_ff:DF_A                                  ; D_ff                ; work         ;
 ;       |Display_7_Segment:Display_A|  ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_A                ; Display_7_Segment   ; work         ;
@@ -241,13 +241,13 @@ https://fpgasoftware.intel.com/eula.
 ;       |Display_7_Segment:Display_B|  ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B                ; Display_7_Segment   ; work         ;
 ;          |comparator:U_C|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|comparator:U_C ; comparator          ; work         ;
 ;          |segment_7:U_G|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Display_7_Segment:Display_B|segment_7:U_G  ; segment_7           ; work         ;
-;       |Program_Counter:PC|           ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Program_Counter:PC                         ; Program_Counter     ; work         ;
+;       |Program_Counter:PC|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Program_Counter:PC                         ; Program_Counter     ; work         ;
 ;       |RAM:RAM_A|                    ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|RAM:RAM_A                                  ; RAM                 ; work         ;
 ;       |Register_4bit:Reg_A|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_A                        ; Register_4bit       ; work         ;
 ;       |Register_4bit:Reg_B|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_B                        ; Register_4bit       ; work         ;
 ;       |Register_4bit:Reg_O|          ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_4bit:Reg_O                        ; Register_4bit       ; work         ;
 ;       |Register_En_Decoder:Reg_En_A| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|Register_En_Decoder:Reg_En_A               ; Register_En_Decoder ; work         ;
-;       |mux4bit_2to1:Mux_A|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|mux4bit_2to1:Mux_A                         ; mux4bit_2to1        ; work         ;
+;       |mux4bit_2to1:Mux_A|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SOC|Number_Cruncher:UU_A|mux4bit_2to1:Mux_A                         ; mux4bit_2to1        ; work         ;
 +--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -260,7 +260,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 17    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 12    ;
 ; Number of registers using Preset             ; 0     ;
@@ -396,25 +396,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 17                          ;
-;     CLR               ; 4                           ;
 ;     ENA               ; 12                          ;
-;     plain             ; 1                           ;
+;     plain             ; 5                           ;
 ; arriav_io_obuf        ; 56                          ;
-; arriav_lcell_comb     ; 52                          ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 51                          ;
+; arriav_lcell_comb     ; 42                          ;
+;     normal            ; 42                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 29                          ;
-;         5 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 25                          ;
+;         5 data inputs ; 5                           ;
 ;         6 data inputs ; 2                           ;
 ; boundary_port         ; 155                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 0.92                        ;
+; Average LUT depth     ; 0.84                        ;
 +-----------------------+-----------------------------+
 
 
@@ -423,7 +420,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -432,228 +429,223 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun Mar  5 22:26:40 2023
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Mon Mar 06 20:05:00 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SOC -c DE1_SOC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.v
-    Info (12023): Found entity 1: DE1_SOC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 6
+    Info (12023): Found entity 1: DE1_SOC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/mux_n.v
-    Info (12023): Found entity 1: mux4bit_2to1 File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v Line: 3
+    Info (12023): Found entity 1: mux4bit_2to1 File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file all_modules/add_sub_n.v
-    Info (12023): Found entity 1: Adder_n File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 3
-    Info (12023): Found entity 2: fulladd File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 31
+    Info (12023): Found entity 1: Adder_n File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 3
+    Info (12023): Found entity 2: fulladd File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 31
 Info (12021): Found 5 design units, including 5 entities, in source file all_modules/7_segment_0-f.v
-    Info (12023): Found entity 1: Display_7_Segment File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 5
-    Info (12023): Found entity 2: comparator File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 27
-    Info (12023): Found entity 3: Circuit_A File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 37
-    Info (12023): Found entity 4: segment_7 File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 57
-    Info (12023): Found entity 5: segment_7_01 File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 78
+    Info (12023): Found entity 1: Display_7_Segment File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 5
+    Info (12023): Found entity 2: comparator File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 27
+    Info (12023): Found entity 3: Circuit_A File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 37
+    Info (12023): Found entity 4: segment_7 File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 57
+    Info (12023): Found entity 5: segment_7_01 File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/register.v
-    Info (12023): Found entity 1: Register_4bit File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v Line: 4
+    Info (12023): Found entity 1: Register_4bit File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/program_counter.v
-    Info (12023): Found entity 1: Program_Counter File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 6
+    Info (12023): Found entity 1: Program_Counter File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/number_cruncher.v
-    Info (12023): Found entity 1: Number_Cruncher File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 1
+    Info (12023): Found entity 1: Number_Cruncher File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/decoder_register_enable.v
-    Info (12023): Found entity 1: Register_En_Decoder File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v Line: 12
+    Info (12023): Found entity 1: Register_En_Decoder File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/ram.v
-    Info (12023): Found entity 1: RAM File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file all_modules/test_cruncher.v
-    Info (12023): Found entity 1: test_Cruncher File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/test_Cruncher.v Line: 1
+    Info (12023): Found entity 1: RAM File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file all_modules/dff.v
-    Info (12023): Found entity 1: D_ff File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v Line: 4
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(41): created implicit net for "a" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 41
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(42): created implicit net for "b" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 42
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(43): created implicit net for "c" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(44): created implicit net for "d" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 44
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(45): created implicit net for "e" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 45
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(61): created implicit net for "a" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 61
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(62): created implicit net for "b" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 62
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(63): created implicit net for "c" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 63
-Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(64): created implicit net for "d" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 64
+    Info (12023): Found entity 1: D_ff File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file test.v
+    Info (12023): Found entity 1: Test File: E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(41): created implicit net for "a" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(42): created implicit net for "b" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(43): created implicit net for "c" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(44): created implicit net for "d" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(45): created implicit net for "e" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(61): created implicit net for "a" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 61
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(62): created implicit net for "b" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(63): created implicit net for "c" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 63
+Warning (10236): Verilog HDL Implicit Net warning at 7_Segment_0-F.v(64): created implicit net for "d" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 64
+Warning (10236): Verilog HDL Implicit Net warning at Test.v(6): created implicit net for "OP_Code" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v Line: 6
 Info (12127): Elaborating entity "DE1_SOC" for the top level hierarchy
-Warning (10034): Output port "DRAM_ADDR" at DE1_SOC.v(21) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-Warning (10034): Output port "DRAM_BA" at DE1_SOC.v(22) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 22
-Warning (10034): Output port "HEX4" at DE1_SOC.v(38) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
-Warning (10034): Output port "HEX5" at DE1_SOC.v(39) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-Warning (10034): Output port "LEDR[9..8]" at DE1_SOC.v(49) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
-Warning (10034): Output port "ADC_CONVST" at DE1_SOC.v(9) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 9
-Warning (10034): Output port "ADC_DIN" at DE1_SOC.v(10) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 10
-Warning (10034): Output port "ADC_SCLK" at DE1_SOC.v(12) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 12
-Warning (10034): Output port "DRAM_CAS_N" at DE1_SOC.v(23) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 23
-Warning (10034): Output port "DRAM_CKE" at DE1_SOC.v(24) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 24
-Warning (10034): Output port "DRAM_CLK" at DE1_SOC.v(25) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 25
-Warning (10034): Output port "DRAM_CS_N" at DE1_SOC.v(26) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 26
-Warning (10034): Output port "DRAM_LDQM" at DE1_SOC.v(28) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 28
-Warning (10034): Output port "DRAM_RAS_N" at DE1_SOC.v(29) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 29
-Warning (10034): Output port "DRAM_UDQM" at DE1_SOC.v(30) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 30
-Warning (10034): Output port "DRAM_WE_N" at DE1_SOC.v(31) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 31
-Warning (10034): Output port "IRDA_TXD" at DE1_SOC.v(43) has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 43
-Info (12128): Elaborating entity "Number_Cruncher" for hierarchy "Number_Cruncher:UU_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 70
-Info (12128): Elaborating entity "D_ff" for hierarchy "Number_Cruncher:UU_A|D_ff:DF_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 15
-Info (12128): Elaborating entity "Program_Counter" for hierarchy "Number_Cruncher:UU_A|Program_Counter:PC" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 17
-Warning (10230): Verilog HDL assignment warning at Program_Counter.v(14): truncated value with size 32 to match size of target (4) File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
-Info (12128): Elaborating entity "RAM" for hierarchy "Number_Cruncher:UU_A|RAM:RAM_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 19
-Info (12128): Elaborating entity "mux4bit_2to1" for hierarchy "Number_Cruncher:UU_A|mux4bit_2to1:Mux_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 24
-Info (12128): Elaborating entity "Register_En_Decoder" for hierarchy "Number_Cruncher:UU_A|Register_En_Decoder:Reg_En_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 28
-Info (12128): Elaborating entity "Register_4bit" for hierarchy "Number_Cruncher:UU_A|Register_4bit:Reg_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 30
-Info (12128): Elaborating entity "Adder_n" for hierarchy "Number_Cruncher:UU_A|Adder_n:ALU" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 34
-Info (12128): Elaborating entity "fulladd" for hierarchy "Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[0].stage" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 24
-Info (12128): Elaborating entity "Display_7_Segment" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 36
-Info (12128): Elaborating entity "comparator" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|comparator:U_C" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 10
-Info (12128): Elaborating entity "segment_7_01" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7_01:U_D" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 11
-Info (12128): Elaborating entity "Circuit_A" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|Circuit_A:U_E" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 15
-Warning (10036): Verilog HDL or VHDL warning at 7_Segment_0-F.v(41): object "a" assigned a value but never read File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 41
-Info (12128): Elaborating entity "segment_7" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7:U_G" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 17
-Warning (12020): Port "ordered port 0" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
-Warning (12020): Port "ordered port 1" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
-Warning (12030): Port "ordered port 3" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be left dangling without any fan-out logic. File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
+Warning (10034): Output port "DRAM_ADDR" at DE1_SOC.v(21) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+Warning (10034): Output port "DRAM_BA" at DE1_SOC.v(22) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 22
+Warning (10034): Output port "LEDR[9..8]" at DE1_SOC.v(49) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
+Warning (10034): Output port "ADC_CONVST" at DE1_SOC.v(9) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 9
+Warning (10034): Output port "ADC_DIN" at DE1_SOC.v(10) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 10
+Warning (10034): Output port "ADC_SCLK" at DE1_SOC.v(12) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 12
+Warning (10034): Output port "DRAM_CAS_N" at DE1_SOC.v(23) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 23
+Warning (10034): Output port "DRAM_CKE" at DE1_SOC.v(24) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 24
+Warning (10034): Output port "DRAM_CLK" at DE1_SOC.v(25) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 25
+Warning (10034): Output port "DRAM_CS_N" at DE1_SOC.v(26) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 26
+Warning (10034): Output port "DRAM_LDQM" at DE1_SOC.v(28) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 28
+Warning (10034): Output port "DRAM_RAS_N" at DE1_SOC.v(29) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 29
+Warning (10034): Output port "DRAM_UDQM" at DE1_SOC.v(30) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 30
+Warning (10034): Output port "DRAM_WE_N" at DE1_SOC.v(31) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 31
+Warning (10034): Output port "IRDA_TXD" at DE1_SOC.v(43) has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 43
+Info (12128): Elaborating entity "Number_Cruncher" for hierarchy "Number_Cruncher:UU_A" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 73
+Info (12128): Elaborating entity "D_ff" for hierarchy "Number_Cruncher:UU_A|D_ff:DF_A" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 15
+Info (12128): Elaborating entity "Program_Counter" for hierarchy "Number_Cruncher:UU_A|Program_Counter:PC" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 17
+Warning (10230): Verilog HDL assignment warning at Program_Counter.v(21): truncated value with size 32 to match size of target (4) File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 21
+Info (12128): Elaborating entity "RAM" for hierarchy "Number_Cruncher:UU_A|RAM:RAM_A" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 20
+Info (12128): Elaborating entity "mux4bit_2to1" for hierarchy "Number_Cruncher:UU_A|mux4bit_2to1:Mux_A" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 24
+Info (12128): Elaborating entity "Register_En_Decoder" for hierarchy "Number_Cruncher:UU_A|Register_En_Decoder:Reg_En_A" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 28
+Info (12128): Elaborating entity "Register_4bit" for hierarchy "Number_Cruncher:UU_A|Register_4bit:Reg_A" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 30
+Info (12128): Elaborating entity "Adder_n" for hierarchy "Number_Cruncher:UU_A|Adder_n:ALU" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 34
+Info (12128): Elaborating entity "fulladd" for hierarchy "Number_Cruncher:UU_A|Adder_n:ALU|fulladd:addbit[0].stage" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v Line: 24
+Info (12128): Elaborating entity "Display_7_Segment" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 36
+Info (12128): Elaborating entity "comparator" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|comparator:U_C" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 10
+Info (12128): Elaborating entity "segment_7_01" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7_01:U_D" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 11
+Info (12128): Elaborating entity "Circuit_A" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|Circuit_A:U_E" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 15
+Warning (10036): Verilog HDL or VHDL warning at 7_Segment_0-F.v(41): object "a" assigned a value but never read File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 41
+Info (12128): Elaborating entity "segment_7" for hierarchy "Number_Cruncher:UU_A|Display_7_Segment:Display_A|segment_7:U_G" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 17
+Warning (12020): Port "ordered port 0" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
+Warning (12020): Port "ordered port 1" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
+Warning (12030): Port "ordered port 3" on the entity instantiation of "U_F" is connected to a signal of width 5. The formal width of the signal in the module is 4.  The extra bits will be left dangling without any fan-out logic. File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Warning (13040): bidirectional pin "PS2_CLK" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 52
-    Warning (13040): bidirectional pin "PS2_CLK2" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 53
-    Warning (13040): bidirectional pin "PS2_DAT" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 54
-    Warning (13040): bidirectional pin "PS2_DAT2" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 55
-    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[9]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "Number_Cruncher:UU_A|Program_Counter:PC|out[2]" is converted into an equivalent circuit using register "Number_Cruncher:UU_A|Program_Counter:PC|out[2]~_emulated" and latch "Number_Cruncher:UU_A|Program_Counter:PC|out[2]~1" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
-    Warning (13310): Register "Number_Cruncher:UU_A|Program_Counter:PC|out[1]" is converted into an equivalent circuit using register "Number_Cruncher:UU_A|Program_Counter:PC|out[1]~_emulated" and latch "Number_Cruncher:UU_A|Program_Counter:PC|out[1]~5" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
-    Warning (13310): Register "Number_Cruncher:UU_A|Program_Counter:PC|out[0]" is converted into an equivalent circuit using register "Number_Cruncher:UU_A|Program_Counter:PC|out[0]~_emulated" and latch "Number_Cruncher:UU_A|Program_Counter:PC|out[0]~9" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v Line: 14
+    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Warning (13040): bidirectional pin "PS2_CLK" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 52
+    Warning (13040): bidirectional pin "PS2_CLK2" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 53
+    Warning (13040): bidirectional pin "PS2_DAT" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 54
+    Warning (13040): bidirectional pin "PS2_DAT2" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 55
+    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[9]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ADC_CONVST" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 9
-    Warning (13410): Pin "ADC_DIN" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 10
-    Warning (13410): Pin "ADC_SCLK" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 12
-    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
-    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 22
-    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 22
-    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 23
-    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 24
-    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 25
-    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 26
-    Warning (13410): Pin "DRAM_LDQM" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 28
-    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 29
-    Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 30
-    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 31
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 35
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 35
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 35
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
-    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 38
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
-    Warning (13410): Pin "IRDA_TXD" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 43
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
+    Warning (13410): Pin "ADC_CONVST" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 9
+    Warning (13410): Pin "ADC_DIN" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 10
+    Warning (13410): Pin "ADC_SCLK" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 12
+    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 21
+    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 22
+    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 22
+    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 23
+    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 24
+    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 25
+    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 26
+    Warning (13410): Pin "DRAM_LDQM" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 28
+    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 29
+    Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 30
+    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 31
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 35
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 35
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 35
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 36
+    Warning (13410): Pin "HEX2[1]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 36
+    Warning (13410): Pin "HEX2[2]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 36
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 36
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 36
+    Warning (13410): Pin "HEX2[5]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 36
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 36
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
+    Warning (13410): Pin "HEX3[2]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
+    Warning (13410): Pin "HEX3[4]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 37
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 39
+    Warning (13410): Pin "IRDA_TXD" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 43
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 49
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 19 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ADC_DOUT" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 11
-    Warning (15610): No output dependent on input pin "CLOCK2_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 15
-    Warning (15610): No output dependent on input pin "CLOCK3_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 16
-    Warning (15610): No output dependent on input pin "CLOCK4_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 17
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 18
-    Warning (15610): No output dependent on input pin "IRDA_RXD" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 42
-    Warning (15610): No output dependent on input pin "KEY[0]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
-    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
-    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
-    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
-    Warning (15610): No output dependent on input pin "SW[0]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-    Warning (15610): No output dependent on input pin "SW[1]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-    Warning (15610): No output dependent on input pin "SW[2]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-    Warning (15610): No output dependent on input pin "SW[3]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-    Warning (15610): No output dependent on input pin "SW[4]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-    Warning (15610): No output dependent on input pin "SW[5]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-    Warning (15610): No output dependent on input pin "SW[6]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-    Warning (15610): No output dependent on input pin "SW[7]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-    Warning (15610): No output dependent on input pin "SW[8]" File: D:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
-Info (21057): Implemented 214 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "ADC_DOUT" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 11
+    Warning (15610): No output dependent on input pin "CLOCK2_50" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 15
+    Warning (15610): No output dependent on input pin "CLOCK3_50" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 16
+    Warning (15610): No output dependent on input pin "CLOCK4_50" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 17
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 18
+    Warning (15610): No output dependent on input pin "IRDA_RXD" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 42
+    Warning (15610): No output dependent on input pin "KEY[1]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
+    Warning (15610): No output dependent on input pin "KEY[2]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
+    Warning (15610): No output dependent on input pin "KEY[3]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 46
+    Warning (15610): No output dependent on input pin "SW[0]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[1]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[2]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[3]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[4]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[5]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[6]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[7]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[8]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+    Warning (15610): No output dependent on input pin "SW[9]" File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 58
+Info (21057): Implemented 206 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 79 output pins
     Info (21060): Implemented 56 bidirectional pins
-    Info (21061): Implemented 59 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 164 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Sun Mar  5 22:26:50 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 51 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 159 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Mon Mar 06 20:05:49 2023
+    Info: Elapsed time: 00:00:49
+    Info: Total CPU time (on all processors): 00:01:33
 
 

@@ -1,0 +1,16 @@
+//////////////////////////////////////////////////////////////////////////
+// RESET Module
+// 
+// Gives '1' for first two cycles
+// Gives '0' for the rest of its life
+
+module Reset (clk, out);
+	input clk;
+	output reg out;
+	
+	always @(posedge clk)
+	begin
+		out <= 1'b1;
+	end
+endmodule
+//////////////////////////////////////////////////////////////////////////

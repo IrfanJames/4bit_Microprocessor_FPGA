@@ -67,6 +67,9 @@ inout 		    [35:0]		GPIO
 //  REG/WIRE declarations
 //=======================================================
 	
-	Number_Cruncher UU_A (SW[9], LEDR[7:0], HEX1, HEX0, HEX3, HEX2);
+	assign HEX2 = 7'b1111111;
+	assign HEX3 = 7'b1111111;
 	
+	Number_Cruncher UU_A (KEY[0], LEDR[7:0], HEX1, HEX0, HEX5, HEX4);
+		
 endmodule

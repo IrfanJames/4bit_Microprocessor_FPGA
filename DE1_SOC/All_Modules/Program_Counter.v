@@ -8,10 +8,17 @@ module Program_Counter (clk, jump, custom_data, out);
 	input [3:0] custom_data;
 	output reg [3:0] out;
 	
-	always @(posedge clk, posedge jump)
+	initial 
 	begin
-		if (jump == 1)	out <= custom_data;
-		else if (clk)	out <= out + 1;
+		out <= 4'b0000;
+	end
+	
+	always @(posedge clk)
+	begin
+		if (jump)	
+		out <= custom_data;
+		else 
+		out <= out + 1;
 	end
 endmodule
 //////////////////////////////////////////////////////////////////////////
