@@ -70,6 +70,9 @@ inout 		    [35:0]		GPIO
 	assign HEX2 = 7'b1111111;
 	assign HEX3 = 7'b1111111;
 	
-	Number_Cruncher UU_A (KEY[0], LEDR[7:0], HEX1, HEX0, HEX5, HEX4);
+	wire Clk;
+	clock_Divider Clock_Div (CLOCK_50, Clk);
+	
+	Number_Cruncher CPU (Clk, LEDR[7:0], HEX1, HEX0, HEX5, HEX4);
 		
 endmodule

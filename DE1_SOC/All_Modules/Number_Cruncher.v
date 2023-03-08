@@ -34,6 +34,6 @@ module Number_Cruncher(clk, OP_Code, Display1, Display0, Display3, Display2);
 	Adder_n ALU (S_C2, ALU_InA, ALU_InB, ALU_Out, ALU_Cout);
 	
 	Display_7_Segment Display_A (Reg_O_Out, Display1, Display0);
-	Display_7_Segment Display_B (PC_Out, Display3, Display2);
+	Display_7_Segment Display_B (PC_Out,    Display3, Display2);
 	
 endmodule

@@ -495,22 +495,24 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Test -section_id eda_simulation
-set_global_assignment -name VERILOG_FILE DE1_SOC.v
-set_global_assignment -name VERILOG_FILE All_Modules/Mux_n.v
-set_global_assignment -name VERILOG_FILE All_Modules/Add_Sub_n.v
-set_global_assignment -name VERILOG_FILE "All_Modules/7_Segment_0-F.v"
-set_global_assignment -name VERILOG_FILE All_Modules/Register.v
-set_global_assignment -name VERILOG_FILE All_Modules/Program_Counter.v
-set_global_assignment -name VERILOG_FILE All_Modules/Number_Cruncher.v
-set_global_assignment -name VERILOG_FILE All_Modules/Decoder_Register_Enable.v
-set_global_assignment -name VERILOG_FILE All_Modules/RAM.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE All_Modules/DFF.v
-set_global_assignment -name VERILOG_FILE Test.v
 set_global_assignment -name EDA_TEST_BENCH_NAME Test -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Test
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Test -section_id Test
 set_global_assignment -name EDA_TEST_BENCH_FILE Test.v -section_id Test
+set_global_assignment -name SDC_FILE DE1_SOC.sdc
+set_global_assignment -name VERILOG_FILE Test.v
+set_global_assignment -name VERILOG_FILE All_Modules/Number_Cruncher.v
+set_global_assignment -name VERILOG_FILE All_Modules/7_Segment_0_19.v
+set_global_assignment -name VERILOG_FILE All_Modules/Clock_Divider.v
+set_global_assignment -name VERILOG_FILE DE1_SOC.v
+set_global_assignment -name VERILOG_FILE All_Modules/Mux_n.v
+set_global_assignment -name VERILOG_FILE All_Modules/Add_Sub_n.v
+set_global_assignment -name VERILOG_FILE All_Modules/Register.v
+set_global_assignment -name VERILOG_FILE All_Modules/Program_Counter.v
+set_global_assignment -name VERILOG_FILE All_Modules/Decoder_Register_Enable.v
+set_global_assignment -name VERILOG_FILE All_Modules/RAM.v
+set_global_assignment -name VERILOG_FILE All_Modules/DFF.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
