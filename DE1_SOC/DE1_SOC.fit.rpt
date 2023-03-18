@@ -1,5 +1,5 @@
 Fitter report for DE1_SOC
-Tue Mar 07 19:29:11 2023
+Sat Mar 18 00:44:22 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Mar 07 19:29:11 2023       ;
+; Fitter Status                   ; Successful - Sat Mar 18 00:44:22 2023       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SOC                                     ;
 ; Top-level Entity Name           ; DE1_SOC                                     ;
@@ -161,8 +161,8 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.3%      ;
-;     Processor 3            ;   0.3%      ;
-;     Processor 4            ;   0.3%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -324,7 +324,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.pin.
+The pin-out file can be found in D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -2466,91 +2466,91 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
     Info (11162): CLOCK_50~inputCLKENA0 with 28 fanout uses global clock CLKCTRL_G6
-Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:01
+Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Info (332104): Reading SDC File: 'DE1_SOC.sdc'
-Warning (332174): Ignored filter at DE1_SOC.sdc(14): TD_CLK27 could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 14
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(14): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 14
-    Info (332050): create_clock -period "27 MHz"  -name tv_27m [get_ports TD_CLK27] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 14
-Warning (332174): Ignored filter at DE1_SOC.sdc(17): AUD_XCK could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 17
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(17): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 17
-    Info (332050): create_clock -period "18.432 MHz" -name clk_audxck [get_ports AUD_XCK] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 17
-Warning (332174): Ignored filter at DE1_SOC.sdc(18): AUD_BCLK could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
-    Info (332050): create_clock -period "1.536 MH" -name clk_audbck [get_ports AUD_BCLK] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Time value "1.536 MH" is not valid File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Option -period: Invalid clock period File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
-Warning (332174): Ignored filter at DE1_SOC.sdc(26): VGA_CLK could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 26
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(26): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 26
-    Info (332050): create_clock -period "108.0 MHz" -name clk_vga [get_ports VGA_CLK] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 26
-Warning (332174): Ignored filter at DE1_SOC.sdc(29): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(29): Argument <targets> is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
-    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
-Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tdi could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
-Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tck could not be matched with a clock File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
-    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
-Warning (332174): Ignored filter at DE1_SOC.sdc(31): altera_reserved_tms could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
-    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
-Warning (332174): Ignored filter at DE1_SOC.sdc(32): altera_reserved_tdo could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
-    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
+Warning (332174): Ignored filter at DE1_SOC.sdc(14): TD_CLK27 could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 14
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(14): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 14
+    Info (332050): create_clock -period "27 MHz"  -name tv_27m [get_ports TD_CLK27] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 14
+Warning (332174): Ignored filter at DE1_SOC.sdc(17): AUD_XCK could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 17
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(17): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 17
+    Info (332050): create_clock -period "18.432 MHz" -name clk_audxck [get_ports AUD_XCK] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 17
+Warning (332174): Ignored filter at DE1_SOC.sdc(18): AUD_BCLK could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
+    Info (332050): create_clock -period "1.536 MH" -name clk_audbck [get_ports AUD_BCLK] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Time value "1.536 MH" is not valid File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Option -period: Invalid clock period File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 18
+Warning (332174): Ignored filter at DE1_SOC.sdc(26): VGA_CLK could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 26
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(26): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 26
+    Info (332050): create_clock -period "108.0 MHz" -name clk_vga [get_ports VGA_CLK] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 26
+Warning (332174): Ignored filter at DE1_SOC.sdc(29): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(29): Argument <targets> is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
+    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 29
+Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tdi could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tck could not be matched with a clock File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 30
+Warning (332174): Ignored filter at DE1_SOC.sdc(31): altera_reserved_tms could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 31
+Warning (332174): Ignored filter at DE1_SOC.sdc(32): altera_reserved_tdo could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
+    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 32
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Warning (332174): Ignored filter at DE1_SOC.sdc(61): TD_DATA* could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
-Warning (332174): Ignored filter at DE1_SOC.sdc(61): tv_27m could not be matched with a clock File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(61): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
-    Info (332050): set_input_delay -max -clock tv_27m 3.508 -clock_fall [get_ports TD_DATA*] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(61): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(62): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 62
-    Info (332050): set_input_delay -min -clock tv_27m -2.539 -clock_fall [get_ports TD_DATA*] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 62
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(62): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 62
-Warning (332174): Ignored filter at DE1_SOC.sdc(63): TD_HS could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 63
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(63): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 63
-    Info (332050): set_input_delay -max -clock tv_27m 3.654 -clock_fall [get_ports TD_HS] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 63
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(63): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 63
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(64): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 64
-    Info (332050): set_input_delay -min -clock tv_27m -2.454 -clock_fall [get_ports TD_HS] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 64
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(64): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 64
-Warning (332174): Ignored filter at DE1_SOC.sdc(65): TD_VS could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 65
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(65): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 65
-    Info (332050): set_input_delay -max -clock tv_27m 3.652 -clock_fall [get_ports TD_VS] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 65
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(65): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 65
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(66): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 66
-    Info (332050): set_input_delay -min -clock tv_27m -2.456 -clock_fall [get_ports TD_VS] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 66
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(66): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 66
-Warning (332174): Ignored filter at DE1_SOC.sdc(95): VGA_R* could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
-Warning (332174): Ignored filter at DE1_SOC.sdc(95): clk_vga could not be matched with a clock File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(95): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
-    Info (332050): set_output_delay -max -clock clk_vga 0.220 [get_ports VGA_R*] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(95): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(96): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 96
-    Info (332050): set_output_delay -min -clock clk_vga -1.506 [get_ports VGA_R*] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 96
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(96): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 96
-Warning (332174): Ignored filter at DE1_SOC.sdc(97): VGA_G* could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 97
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(97): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 97
-    Info (332050): set_output_delay -max -clock clk_vga 0.212 [get_ports VGA_G*] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 97
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(97): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 97
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(98): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 98
-    Info (332050): set_output_delay -min -clock clk_vga -1.519 [get_ports VGA_G*] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 98
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(98): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 98
-Warning (332174): Ignored filter at DE1_SOC.sdc(99): VGA_B* could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 99
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(99): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 99
-    Info (332050): set_output_delay -max -clock clk_vga 0.264 [get_ports VGA_B*] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 99
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(99): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 99
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(100): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 100
-    Info (332050): set_output_delay -min -clock clk_vga -1.519 [get_ports VGA_B*] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 100
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(100): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 100
-Warning (332174): Ignored filter at DE1_SOC.sdc(101): VGA_BLANK could not be matched with a port File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(101): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
-    Info (332050): set_output_delay -max -clock clk_vga 0.215 [get_ports VGA_BLANK] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(101): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(102): Argument <targets> is an empty collection File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 102
-    Info (332050): set_output_delay -min -clock clk_vga -1.485 [get_ports VGA_BLANK] File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 102
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(102): Argument -clock is not an object ID File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 102
+Warning (332174): Ignored filter at DE1_SOC.sdc(61): TD_DATA* could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
+Warning (332174): Ignored filter at DE1_SOC.sdc(61): tv_27m could not be matched with a clock File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(61): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
+    Info (332050): set_input_delay -max -clock tv_27m 3.508 -clock_fall [get_ports TD_DATA*] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(61): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 61
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(62): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 62
+    Info (332050): set_input_delay -min -clock tv_27m -2.539 -clock_fall [get_ports TD_DATA*] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 62
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(62): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 62
+Warning (332174): Ignored filter at DE1_SOC.sdc(63): TD_HS could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 63
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(63): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 63
+    Info (332050): set_input_delay -max -clock tv_27m 3.654 -clock_fall [get_ports TD_HS] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 63
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(63): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 63
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(64): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 64
+    Info (332050): set_input_delay -min -clock tv_27m -2.454 -clock_fall [get_ports TD_HS] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 64
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(64): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 64
+Warning (332174): Ignored filter at DE1_SOC.sdc(65): TD_VS could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 65
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(65): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 65
+    Info (332050): set_input_delay -max -clock tv_27m 3.652 -clock_fall [get_ports TD_VS] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 65
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(65): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 65
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(66): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 66
+    Info (332050): set_input_delay -min -clock tv_27m -2.456 -clock_fall [get_ports TD_VS] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 66
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(66): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 66
+Warning (332174): Ignored filter at DE1_SOC.sdc(95): VGA_R* could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
+Warning (332174): Ignored filter at DE1_SOC.sdc(95): clk_vga could not be matched with a clock File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(95): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
+    Info (332050): set_output_delay -max -clock clk_vga 0.220 [get_ports VGA_R*] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(95): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 95
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(96): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 96
+    Info (332050): set_output_delay -min -clock clk_vga -1.506 [get_ports VGA_R*] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 96
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(96): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 96
+Warning (332174): Ignored filter at DE1_SOC.sdc(97): VGA_G* could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 97
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(97): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 97
+    Info (332050): set_output_delay -max -clock clk_vga 0.212 [get_ports VGA_G*] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 97
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(97): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 97
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(98): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 98
+    Info (332050): set_output_delay -min -clock clk_vga -1.519 [get_ports VGA_G*] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 98
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(98): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 98
+Warning (332174): Ignored filter at DE1_SOC.sdc(99): VGA_B* could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 99
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(99): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 99
+    Info (332050): set_output_delay -max -clock clk_vga 0.264 [get_ports VGA_B*] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 99
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(99): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 99
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(100): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 100
+    Info (332050): set_output_delay -min -clock clk_vga -1.519 [get_ports VGA_B*] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 100
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(100): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 100
+Warning (332174): Ignored filter at DE1_SOC.sdc(101): VGA_BLANK could not be matched with a port File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(101): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
+    Info (332050): set_output_delay -max -clock clk_vga 0.215 [get_ports VGA_BLANK] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(101): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 101
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(102): Argument <targets> is an empty collection File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 102
+    Info (332050): set_output_delay -min -clock clk_vga -1.485 [get_ports VGA_BLANK] File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 102
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(102): Argument -clock is not an object ID File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.sdc Line: 102
 Warning (332060): Node: clock_Divider:Clock_Div|clk_out was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register Number_Cruncher:CPU|Register_4bit:Reg_O|out[1] is being clocked by clock_Divider:Clock_Div|clk_out
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
@@ -2615,95 +2615,95 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:50
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:12
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X56_Y0 to location X66_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 2.69 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.53 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:35
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169064): Following 56 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin DRAM_DQ[0] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[1] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[2] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[3] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[4] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[5] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[6] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[7] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[8] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[9] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[10] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[11] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[12] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[13] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[14] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin DRAM_DQ[15] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
-    Info (169065): Pin PS2_CLK has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 52
-    Info (169065): Pin PS2_CLK2 has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 53
-    Info (169065): Pin PS2_DAT has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 54
-    Info (169065): Pin PS2_DAT2 has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 55
-    Info (169065): Pin GPIO[0] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[1] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[2] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[3] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[4] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[5] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[6] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[7] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[8] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[9] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[10] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[11] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[12] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[13] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[14] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[15] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[16] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[17] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[18] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[19] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[20] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[21] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[22] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[23] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[24] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[25] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[26] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[27] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[28] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[29] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[30] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[31] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[32] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[33] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[34] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-    Info (169065): Pin GPIO[35] has a permanently disabled output enable File: E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
-Info (144001): Generated suppressed messages file E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.fit.smsg
+    Info (169065): Pin DRAM_DQ[0] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[1] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[2] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[3] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[4] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[5] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[6] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[7] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[8] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[9] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[10] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[11] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[12] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[13] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[14] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin DRAM_DQ[15] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 27
+    Info (169065): Pin PS2_CLK has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 52
+    Info (169065): Pin PS2_CLK2 has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 53
+    Info (169065): Pin PS2_DAT has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 54
+    Info (169065): Pin PS2_DAT2 has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 55
+    Info (169065): Pin GPIO[0] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[1] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[2] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[3] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[4] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[5] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[6] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[7] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[8] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[9] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[10] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[11] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[12] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[13] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[14] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[15] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[16] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[17] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[18] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[19] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[20] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[21] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[22] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[23] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[24] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[25] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[26] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[27] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[28] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[29] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[30] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[31] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[32] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[33] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[34] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+    Info (169065): Pin GPIO[35] has a permanently disabled output enable File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v Line: 62
+Info (144001): Generated suppressed messages file D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 115 warnings
-    Info: Peak virtual memory: 6537 megabytes
-    Info: Processing ended: Tue Mar 07 19:29:14 2023
-    Info: Elapsed time: 00:02:53
-    Info: Total CPU time (on all processors): 00:04:11
+    Info: Peak virtual memory: 6576 megabytes
+    Info: Processing ended: Sat Mar 18 00:44:22 2023
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:00:54
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.fit.smsg.
+The suppressed messages can be found in D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.fit.smsg.
 
 

@@ -1,5 +1,4 @@
 # Reading pref.tcl
-# ERROR: No extended dataflow license exists
 # do DE1_SOC_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -11,41 +10,20 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC {E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v}
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:07 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC" E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v 
-# -- Compiling module DE1_SOC
+# Start time: 19:23:10 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v 
+# -- Compiling module Number_Cruncher
 # 
 # Top level modules:
-# 	DE1_SOC
-# End time: 19:40:08 on Mar 06,2023, Elapsed time: 0:00:01
+# 	Number_Cruncher
+# End time: 19:23:10 on Mar 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v}
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:08 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v 
-# -- Compiling module mux4bit_2to1
-# 
-# Top level modules:
-# 	mux4bit_2to1
-# End time: 19:40:08 on Mar 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:08 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v 
-# -- Compiling module Adder_n
-# -- Compiling module fulladd
-# 
-# Top level modules:
-# 	Adder_n
-# End time: 19:40:08 on Mar 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:09 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v 
+# Start time: 19:23:10 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v 
 # -- Compiling module Display_7_Segment
 # -- Compiling module comparator
 # -- Compiling module Circuit_A
@@ -54,83 +32,114 @@
 # 
 # Top level modules:
 # 	Display_7_Segment
-# End time: 19:40:09 on Mar 06,2023, Elapsed time: 0:00:00
+# End time: 19:23:10 on Mar 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v}
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Clock_Divider.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:09 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v 
+# Start time: 19:23:10 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Clock_Divider.v 
+# -- Compiling module clock_Divider
+# 
+# Top level modules:
+# 	clock_Divider
+# End time: 19:23:10 on Mar 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:23:10 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v 
+# -- Compiling module DE1_SOC
+# 
+# Top level modules:
+# 	DE1_SOC
+# End time: 19:23:10 on Mar 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:23:10 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v 
+# -- Compiling module mux4bit_2to1
+# 
+# Top level modules:
+# 	mux4bit_2to1
+# End time: 19:23:11 on Mar 18,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:23:11 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v 
+# -- Compiling module Adder_n
+# -- Compiling module fulladd
+# 
+# Top level modules:
+# 	Adder_n
+# End time: 19:23:11 on Mar 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:23:11 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v 
 # -- Compiling module Register_4bit
 # 
 # Top level modules:
 # 	Register_4bit
-# End time: 19:40:09 on Mar 06,2023, Elapsed time: 0:00:00
+# End time: 19:23:11 on Mar 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v}
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:09 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v 
+# Start time: 19:23:11 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v 
 # -- Compiling module Program_Counter
 # 
 # Top level modules:
 # 	Program_Counter
-# End time: 19:40:09 on Mar 06,2023, Elapsed time: 0:00:00
+# End time: 19:23:11 on Mar 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v}
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:10 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v 
-# -- Compiling module Number_Cruncher
-# 
-# Top level modules:
-# 	Number_Cruncher
-# End time: 19:40:10 on Mar 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:10 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v 
+# Start time: 19:23:11 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v 
 # -- Compiling module Register_En_Decoder
 # 
 # Top level modules:
 # 	Register_En_Decoder
-# End time: 19:40:10 on Mar 06,2023, Elapsed time: 0:00:00
+# End time: 19:23:11 on Mar 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v}
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:10 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v 
+# Start time: 19:23:11 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v 
 # -- Compiling module RAM
 # 
 # Top level modules:
 # 	RAM
-# End time: 19:40:11 on Mar 06,2023, Elapsed time: 0:00:01
+# End time: 19:23:11 on Mar 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v}
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:11 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v 
+# Start time: 19:23:11 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v 
 # -- Compiling module D_ff
 # 
 # Top level modules:
 # 	D_ff
-# End time: 19:40:11 on Mar 06,2023, Elapsed time: 0:00:00
+# End time: 19:23:11 on Mar 18,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC {E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v}
+# vlog -vlog01compat -work work +incdir+D:/DSD\ Quartus/4bit_Microprocessor_FPGA/DE1_SOC {D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:40:11 on Mar 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC" E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v 
+# Start time: 19:23:11 on Mar 18,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC" D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v 
 # -- Compiling module Test
 # 
 # Top level modules:
 # 	Test
-# End time: 19:40:11 on Mar 06,2023, Elapsed time: 0:00:00
+# End time: 19:23:12 on Mar 18,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Test
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Test 
-# Start time: 19:40:11 on Mar 06,2023
+# Start time: 19:23:12 on Mar 18,2023
 # Loading work.Test
 # Loading work.Number_Cruncher
 # Loading work.D_ff
@@ -146,28 +155,30 @@
 # Loading work.Circuit_A
 # Loading work.segment_7
 # Loading work.fulladd
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UU_A'.  Expected 7, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A File: E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v Line: 7
-# ** Warning: (vsim-3722) E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v(7): [TFMPC] - Missing connection for port 'Display1'.
-# ** Warning: (vsim-3722) E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v(7): [TFMPC] - Missing connection for port 'Display0'.
-# ** Warning: (vsim-3722) E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v(7): [TFMPC] - Missing connection for port 'Display3'.
-# ** Warning: (vsim-3722) E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v(7): [TFMPC] - Missing connection for port 'Display2'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'in'. The port definition is at: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_A File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 36
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'in_A'. The port definition is at: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_A/U_F File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'in_B'. The port definition is at: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_A/U_F File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'out'. The port definition is at: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_A/U_F File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'in'. The port definition is at: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v(5).
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_B File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 37
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'in_A'. The port definition is at: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_B/U_F File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'in_B'. The port definition is at: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_B/U_F File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'out'. The port definition is at: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_B/U_F File: E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v Line: 16
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UU_A'.  Expected 6, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'OP_Code'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v Line: 6
+# ** Warning: (vsim-3722) D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v(6): [TFMPC] - Missing connection for port 'Display1'.
+# ** Warning: (vsim-3722) D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v(6): [TFMPC] - Missing connection for port 'Display0'.
+# ** Warning: (vsim-3722) D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v(6): [TFMPC] - Missing connection for port 'Display3'.
+# ** Warning: (vsim-3722) D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v(6): [TFMPC] - Missing connection for port 'Display2'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'in'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_A File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 36
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'in_A'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_A/U_F File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'in_B'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_A/U_F File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'out'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_A/U_F File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'in'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_B File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'in_A'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_B/U_F File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'in_B'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_B/U_F File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'out'. The port definition is at: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /Test/UU_A/Display_B/U_F File: D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v Line: 16
 # 
 # add wave *
 # view structure
@@ -175,5 +186,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 20:00:00 on Mar 06,2023, Elapsed time: 0:19:49
-# Errors: 0, Warnings: 13
+# End time: 19:23:43 on Mar 18,2023, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 14

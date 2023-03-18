@@ -1,3 +1,6 @@
+*This Project's GitHub Link
+  https://github.com/IrfanJames/4bit_Microprocessor_FPGA
+
 *Design
 Ben Eater:
   https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU

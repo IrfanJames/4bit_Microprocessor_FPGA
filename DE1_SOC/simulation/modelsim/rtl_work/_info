@@ -8,129 +8,154 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dE:/4bit_Microprocessor_FPGA/DE1_SOC/simulation/modelsim
+Z0 dD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/simulation/modelsim
 vAdder_n
-Z1 !s110 1678174808
+Z1 !s110 1679149391
 !i10b 1
 !s100 80nz`5?nC^7;PhY:D0Z930
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ii7<m84hF_;oG2^Xkd^cG02
+IcZ?7RkV6KMW><heb89RQI1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1678098926
-Z5 8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v
-Z6 FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v
-!i122 2
+Z4 w1677782828
+Z5 8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v
+Z6 FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v
+!i122 5
 L0 3 26
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1678174808.000000
-Z9 !s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v|
-Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v|
+Z8 !s108 1679149391.000000
+Z9 !s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Add_Sub_n.v|
 !i113 1
 Z11 o-vlog01compat -work work
-Z12 !s92 -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules
+Z12 !s92 -vlog01compat -work work {+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules}
 Z13 tCvgOpt 0
 n@adder_n
 vCircuit_A
-Z14 !s110 1678174809
+Z14 !s110 1679149390
 !i10b 1
 !s100 9F3ziQJ_b0=FM@O^8dTLd2
 R2
-IACU7`M^j[PEgWo@0ETT`51
+IMaLDH9YgX1jm`J3T]B<z;2
 R3
 R0
-R4
-Z15 8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v
-Z16 FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v
-!i122 3
+Z15 w1678208613
+Z16 8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v
+Z17 FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v
+!i122 1
 L0 37 16
 R7
 r1
 !s85 0
 31
-Z17 !s108 1678174809.000000
-Z18 !s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v|
-Z19 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0-F.v|
+Z18 !s108 1679149390.000000
+Z19 !s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v|
+Z20 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/7_Segment_0_19.v|
 !i113 1
 R11
 R12
 R13
 n@circuit_@a
+vclock_Divider
+R14
+!i10b 1
+!s100 Kan6n;_O6:HfPSgjUSI@:3
+R2
+If4C?>Te;@n1W2eOla6C1Y0
+R3
+R0
+R15
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Clock_Divider.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Clock_Divider.v
+!i122 2
+L0 6 14
+R7
+r1
+!s85 0
+31
+R18
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Clock_Divider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Clock_Divider.v|
+!i113 1
+R11
+R12
+R13
+nclock_@divider
 vcomparator
 R14
 !i10b 1
 !s100 N^dPc?H?M<imBeA;gz=ge1
 R2
-INLYDd@3md:^a8^SNCF>g80
+I7l__ITkV>_Y45NfbA=jc52
 R3
 R0
-R4
 R15
 R16
-!i122 3
+R17
+!i122 1
 L0 27 6
 R7
 r1
 !s85 0
 31
-R17
 R18
 R19
+R20
 !i113 1
 R11
 R12
 R13
 vD_ff
-Z20 !s110 1678174811
+R1
 !i10b 1
 !s100 f9bBdOR0B54ZXzPfR_Cof2
 R2
-IDzeCh4?@>fcaF0INH6l0o1
+Ic<SjkPL<g;A;aKImSg:E^0
 R3
 R0
-R4
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v
-!i122 9
+w1678036959
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v
+!i122 10
 L0 4 9
 R7
 r1
 !s85 0
 31
-Z21 !s108 1678174811.000000
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v|
+R8
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/DFF.v|
 !i113 1
 R11
 R12
 R13
 n@d_ff
 vDE1_SOC
-R1
+R14
 !i10b 1
-!s100 VOV4?TV0b<LY>PX4HY=I43
+!s100 d@QdO;_h1J=RzYH3I;lG20
 R2
-IajJ_Q:jBeKia2ND9>nzoP0
+IKZUJGUCGFWY:<`282:E3d0
 R3
 R0
-w1678174046
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v
-!i122 0
-L0 6 70
+R15
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v
+!i122 3
+L0 6 73
 R7
 r1
 !s85 0
 31
-!s108 1678174807.000000
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC|E:/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v|
+R18
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/DE1_SOC.v|
 !i113 1
 R11
-Z22 !s92 -vlog01compat -work work +incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC
+Z21 !s92 -vlog01compat -work work {+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC}
 R13
 n@d@e1_@s@o@c
 vDisplay_7_Segment
@@ -138,21 +163,21 @@ R14
 !i10b 1
 !s100 =bcdZE>FbM?>QO5Ma?W4C3
 R2
-Ib_PYK=HFiV1jPE9:lBKG:2
+Iklk1]emMOW5@RLIR7^jKn0
 R3
 R0
-R4
 R15
 R16
-!i122 3
+R17
+!i122 1
 L0 5 14
 R7
 r1
 !s85 0
 31
-R17
 R18
 R19
+R20
 !i113 1
 R11
 R12
@@ -163,13 +188,13 @@ R1
 !i10b 1
 !s100 XO;BdCdB^Y8Gmln9KB4hl2
 R2
-IWiYnWD`QEWUIAkh1V9TU33
+IX4d]:=WVfn;L4YO5<N?[E1
 R3
 R0
 R4
 R5
 R6
-!i122 2
+!i122 5
 L0 31 7
 R7
 r1
@@ -183,149 +208,149 @@ R11
 R12
 R13
 vmux4bit_2to1
-R1
+R14
 !i10b 1
 !s100 Lfgo:z?UmW?_LZUfLlSnR2
 R2
-IMPX=FL2cQRIT0b4ZU=T8l2
+I>`c:B2TUh]6>gMa00bGem0
 R3
 R0
-R4
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v
-!i122 1
+w1677848767
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v
+!i122 4
 L0 3 8
 R7
 r1
 !s85 0
 31
-R8
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v|
+R18
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Mux_n.v|
 !i113 1
 R11
 R12
 R13
 vNumber_Cruncher
-Z23 !s110 1678174810
+R14
 !i10b 1
-!s100 T`lSH<H1PDS3o_hS9?U:k3
+!s100 TPgjajdj6VDZDXU=b5jfn3
 R2
-IdemN[X4LC8m8DfIinLAb:1
+Iij^2U@b2PzI0z>HB6E[QL3
 R3
 R0
-w1678169604
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v
-!i122 6
+R15
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v
+!i122 0
 L0 1 39
 R7
 r1
 !s85 0
 31
-Z24 !s108 1678174810.000000
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v|
+R18
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Number_Cruncher.v|
 !i113 1
 R11
 R12
 R13
 n@number_@cruncher
 vProgram_Counter
-R14
+R1
 !i10b 1
 !s100 iz3emNJY_zHjMchTV65Vm1
 R2
-I17OMQIo8gXYR?C<iSRLiA2
+Ib@XfdC@<W=I]k:d0HWX7c0
 R3
 R0
-w1678174333
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v
-!i122 5
+Z22 w1678129488
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v
+!i122 7
 L0 6 18
 R7
 r1
 !s85 0
 31
-R17
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v|
+R8
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Program_Counter.v|
 !i113 1
 R11
 R12
 R13
 n@program_@counter
 vRAM
-R20
+R1
 !i10b 1
-!s100 Yb6GLWVl;>4ZKkI@z@bBX3
+!s100 DmVERGSLP^N2Uh56?QNcO1
 R2
-I3iH[B>kIhS]eFNzfXTRPD0
+I8[b<=H`gEJD;IjCN_cf8z0
 R3
 R0
-w1678168724
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v
-!i122 8
-L0 5 21
+R15
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v
+!i122 9
+L0 5 20
 R7
 r1
 !s85 0
 31
-R24
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v|
+R8
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/RAM.v|
 !i113 1
 R11
 R12
 R13
 n@r@a@m
 vRegister_4bit
-R14
+R1
 !i10b 1
 !s100 jac5nHoeJI5JEj]P;M`2f2
 R2
-IBoOKIVj2Kn6jWZ3ZPk1n21
+I10][6<A_Q?o_PO2EC6YZz0
 R3
 R0
-R4
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v
-!i122 4
+w1677855802
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v
+!i122 6
 L0 4 11
 R7
 r1
 !s85 0
 31
-R17
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v|
+R8
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Register.v|
 !i113 1
 R11
 R12
 R13
 n@register_4bit
 vRegister_En_Decoder
-R23
+R1
 !i10b 1
 !s100 @W1TAeQY9g;kY`FYGWW_c1
 R2
-I53TYez7X06F;^iL8^MU^20
+IGih?CiDdMT;i]>9>Iibc61
 R3
 R0
-R4
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v
-!i122 7
+w1678019504
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v
+!i122 8
 L0 12 14
 R7
 r1
 !s85 0
 31
-R24
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|E:/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v|
+R8
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/All_Modules/Decoder_Register_Enable.v|
 !i113 1
 R11
 R12
@@ -336,21 +361,21 @@ R14
 !i10b 1
 !s100 Z00Kh_]8?k<Thbm4JjY_53
 R2
-I[EWLRYoKVYfoPCengUJU^1
+I36NT7gF[VzTz1j4X4[<m@0
 R3
 R0
-R4
 R15
 R16
-!i122 3
+R17
+!i122 1
 L0 57 17
 R7
 r1
 !s85 0
 31
-R17
 R18
 R19
+R20
 !i113 1
 R11
 R12
@@ -360,47 +385,47 @@ R14
 !i10b 1
 !s100 _oK<OMLXo5OhhV2mk7VVL1
 R2
-I^2iE;nZl;TeL=ZIH8L4`32
+IC_KnNUE22__zK2M;WH;`H3
 R3
 R0
-R4
 R15
 R16
-!i122 3
+R17
+!i122 1
 L0 78 12
 R7
 r1
 !s85 0
 31
-R17
 R18
 R19
+R20
 !i113 1
 R11
 R12
 R13
 vTest
-R20
+!s110 1679149392
 !i10b 1
-!s100 hh]GL@T7CW9ef:KC`kYKC0
+!s100 7T;L3F]E;5J^:GXOo5]WQ0
 R2
-I]KoC=NJn:;g3O27BHUk]>3
+IW?8`8I9Jiik81Y_=HT3je2
 R3
 R0
-w1678174148
-8E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v
-FE:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v
-!i122 10
-L0 1 31
+R22
+8D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v
+FD:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v
+!i122 11
+L0 1 30
 R7
 r1
 !s85 0
 31
-R21
-!s107 E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/4bit_Microprocessor_FPGA/DE1_SOC|E:/4bit_Microprocessor_FPGA/DE1_SOC/Test.v|
+R8
+!s107 D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC|D:/DSD Quartus/4bit_Microprocessor_FPGA/DE1_SOC/Test.v|
 !i113 1
 R11
-R22
+R21
 R13
 n@test
